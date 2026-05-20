@@ -1,0 +1,10 @@
+node_modules/
+package-lock.json
+.DS_Store
+_site/
+.env
+.env.local
+.next/
+next-env.d.ts
+tsconfig.tsbuildinfo
+output/
