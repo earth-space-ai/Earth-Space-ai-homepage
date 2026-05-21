@@ -2575,3 +2575,17 @@ a.stack-chip:focus-visible {
   color: var(--ink-3);
 }
 
+/* Maintainer byline beside each skill */
+.skill-maintainer {
+  margin-left: 0.45rem;
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 0.74rem;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+.skill-maintainer .gh {
+  color: var(--ink-3);
+  text-decoration: none;
+}
+.skill-maintainer .gh:hover { color: var(--ink); }
+

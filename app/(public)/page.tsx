@@ -175,6 +175,25 @@ export default function HomePage() {
                           <strong>{s.name}</strong>
                         </a>
                         <span className="skill-desc">, {s.long}</span>
+                        {s.maintainer ? (
+                          <span className="skill-maintainer">
+                            {" — "}
+                            {s.maintainer.name}
+                            {s.maintainer.github ? (
+                              <>
+                                {" "}
+                                <a
+                                  className="gh"
+                                  href={`https://github.com/${s.maintainer.github}`}
+                                  target="_blank"
+                                  rel="noopener"
+                                >
+                                  @{s.maintainer.github}
+                                </a>
+                              </>
+                            ) : null}
+                          </span>
+                        ) : null}
                       </li>
                     ))}
                   </ul>
