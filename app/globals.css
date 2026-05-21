@@ -2517,10 +2517,7 @@ a.stack-chip:focus-visible {
 .teams-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
-  margin: 0.75rem 0 0;
+  margin: 0.75rem -1px 0 0;
 }
 .teams-grid .person-card {
   background: var(--paper);
@@ -2531,6 +2528,8 @@ a.stack-chip:focus-visible {
   text-decoration: none;
   color: inherit;
   transition: background 0.2s var(--ease, ease);
+  border: 1px solid var(--line);
+  margin: 0 -1px -1px 0;
 }
 .teams-grid a.person-card:hover { background: var(--paper-2, rgba(127,127,127,0.06)); }
 .teams-grid .portrait {
