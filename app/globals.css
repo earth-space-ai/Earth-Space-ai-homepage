@@ -264,9 +264,9 @@ html.js-reveal .reveal.in{opacity:1;transform:none}
 .sec-head-full .sec-lede{font-size:17px;color:var(--ink-3);max-width:60ch;line-height:1.55;margin:0}
 .sec .sec-head-full + .people-grid{margin-top:0}
 
-.people-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.people-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));margin-right:-1px}
 
-.person-card{background:var(--paper);padding:22px 22px 24px;display:flex;flex-direction:column;gap:14px;transition:background .2s var(--ease)}
+.person-card{background:var(--paper);padding:22px 22px 24px;display:flex;flex-direction:column;gap:14px;transition:background .2s var(--ease);border:1px solid var(--line);margin:0 -1px -1px 0}
 .person-card:hover{background:var(--paper-2)}
 .person-card:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;background:var(--paper-2)}
 .person-card .portrait{
@@ -2512,6 +2512,29 @@ a.stack-chip:focus-visible {
   text-decoration: none;
 }
 .person-gh:hover { color: var(--ink); }
+
+/* /teams — section lede beneath each role heading */
+.skill-group-lede {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink-3);
+  text-wrap: pretty;
+  max-width: 62ch;
+}
+
+/* /teams — contact line at the bottom of all sections */
+.teams-contact {
+  margin: 2rem 0 0;
+  font-size: 0.95rem;
+  color: var(--ink-3);
+}
+.teams-contact a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.teams-contact a:hover { color: var(--accent); }
 
 /* /teams — SI-style portrait cards (gradient + initials) */
 .teams-grid {

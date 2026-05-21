@@ -132,7 +132,7 @@ export const skillGroups: SkillGroup[] = [
 // Partner skill repos are folded into skillGroups above as additional domain groups.
 // /#partners is now a People grid.
 
-export type PersonRole = "senior" | "junior" | "postdoc" | "student" | "other";
+export type PersonRole = "science" | "executive" | "scholars";
 
 export type Person = {
   name: string;
@@ -158,31 +158,52 @@ const GRAD_G = "linear-gradient(105deg, #dfe8f3 0%, #96adc9 45%, #1f2a3e 110%)";
 const GRAD_H = "linear-gradient(165deg, #e4ecf5 0%, #a8bdd6 45%, #27344a 110%)";
 
 export const people: Person[] = [
-  // Professors
-  { name: "Marco Velli",     affiliation: "Professor · UCLA",              role: "senior", initials: "MV", gradient: GRAD_A },
-  { name: "Chuanfei Dong",   affiliation: "Professor · Boston University", role: "senior", initials: "CD", gradient: GRAD_B },
-  // { name: "Tamas I. Gombosi",affiliation: "Professor · UMich",           role: "senior", initials: "TG", gradient: GRAD_C },
+  // Scientific Committee
+  { name: "Marco Velli",     affiliation: "Professor · UCLA",              role: "science", initials: "MV", gradient: GRAD_A },
+  { name: "Chuanfei Dong",   affiliation: "Professor · Boston University", role: "science", initials: "CD", gradient: GRAD_B },
 
-  // Postdocs
-  { name: "Zesen Huang",     affiliation: "Postdoc · UCLA",                role: "postdoc", author: true, note: "corresponding", github: "huangzesen", initials: "ZH", gradient: GRAD_D },
+  // Executive Committee
+  { name: "Koutian Wu",      affiliation: "PhD Student · UT Austin",       role: "executive", author: true, github: "ktwu01",     link: "https://scholar.google.com/citations?user=s9w1k-cAAAAJ&hl=en", initials: "KW", gradient: GRAD_H },
+  { name: "Zesen Huang",     affiliation: "Postdoc · UCLA",                role: "executive", author: true, note: "corresponding", github: "huangzesen",                                                  initials: "ZH", gradient: GRAD_D },
 
-  // Collaborators (students + other contributors)
-  { name: "Koutian Wu",      affiliation: "PhD Student · UT Austin",       role: "other", author: true, github: "ktwu01",     link: "https://scholar.google.com/citations?user=s9w1k-cAAAAJ&hl=en", initials: "KW", gradient: GRAD_H },
-  { name: "Weihao Liu",      affiliation: "PhD Candidate · UMich",         role: "other", author: true,                                                                                                       initials: "WL", gradient: GRAD_E },
-  { name: "Liuwei Xu",       affiliation: "UCLA",                          role: "other", github: "liuwei1997",                                                                                              initials: "LX", gradient: GRAD_F },
-  { name: "Hejia Geng",      affiliation: "Researcher · Oxford",           role: "other",                          link: "https://scholar.google.com/citations?hl=en&user=ameiXi0AAAAJ",                      initials: "HG", gradient: GRAD_B },
-  { name: "Jiachen Liu",     affiliation: "Meta",                          role: "other",                                                                                                                     initials: "JL", gradient: GRAD_G },
-  { name: "Zigong Xu",       affiliation: "",                              role: "other",                                                                                                                     initials: "ZX", gradient: GRAD_C },
-  { name: "Yuhan Wang",      affiliation: "ETH Zürich",                    role: "other",                                                                                                                     initials: "YW", gradient: GRAD_A },
-  { name: "Liting Mai",      affiliation: "UIUC",                          role: "other",                                                                                                                     initials: "LM", gradient: GRAD_D },
-  // { name: "Tian Zhou",       affiliation: "PNNL",                        role: "other",                                                                                                                     initials: "TZ", gradient: GRAD_F },
+  // Scholars
+  { name: "Weihao Liu",      affiliation: "PhD Candidate · UMich",         role: "scholars", author: true,                                                                                                       initials: "WL", gradient: GRAD_E },
+  { name: "Liuwei Xu",       affiliation: "UCLA",                          role: "scholars", github: "liuwei1997",                                                                                              initials: "LX", gradient: GRAD_F },
+  { name: "Hejia Geng",      affiliation: "Researcher · Oxford",           role: "scholars",                       link: "https://scholar.google.com/citations?hl=en&user=ameiXi0AAAAJ",                       initials: "HG", gradient: GRAD_B },
+  { name: "Jiachen Liu",     affiliation: "Meta",                          role: "scholars",                                                                                                                    initials: "JL", gradient: GRAD_G },
+  { name: "Zigong Xu",       affiliation: "",                              role: "scholars",                                                                                                                    initials: "ZX", gradient: GRAD_C },
+  { name: "Yuhan Wang",      affiliation: "ETH Zürich",                    role: "scholars",                                                                                                                    initials: "YW", gradient: GRAD_A },
+  { name: "Liting Mai",      affiliation: "UIUC",                          role: "scholars",                                                                                                                    initials: "LM", gradient: GRAD_D },
 ];
 
-export const ROLE_SECTIONS: { role: PersonRole; idx: string; label: string }[] = [
-  { role: "senior",  idx: "01", label: "Professors" },
-  { role: "junior",  idx: "02", label: "Junior professors" },
-  { role: "postdoc", idx: "03", label: "Postdocs" },
-  { role: "other",   idx: "04", label: "Collaborators" },
+export const ROLE_SECTIONS: {
+  role: PersonRole;
+  idx: string;
+  label: string;
+  eyebrow: string;
+  lede: string;
+}[] = [
+  {
+    role: "science",
+    idx: "01",
+    label: "Scientific Committee",
+    eyebrow: "§ Scientific Committee",
+    lede: "Faculty advisors and principal investigators whose groups anchor the research agenda.",
+  },
+  {
+    role: "executive",
+    idx: "02",
+    label: "Executive Committee",
+    eyebrow: "§ Executive Committee",
+    lede: "Day-to-day operations: releases, issue triage, docs, partner outreach, funder relations, and research-integrity review. The committee reports to the community.",
+  },
+  {
+    role: "scholars",
+    idx: "03",
+    label: "Scholars",
+    eyebrow: "§ Scholars",
+    lede: "Researchers contributing code, papers, knowledge units, and evaluation tasks. Contribution is the organizing principle.",
+  },
 ];
 
 export const ORG_HANDLE = "earth-space-agent-skills";
