@@ -19,7 +19,33 @@ npm run dev   # http://localhost:3000
 
 ## Deploy
 
-Any Next.js host (Vercel, Railway, Netlify, self-host). Runs `npm run build` then `npm start`. The service listens on `$PORT`.
+### Vercel auto-deploy
+
+This repo is configured for Vercel Git deployments:
+
+- Framework preset: Next.js
+- Install command: `npm ci`
+- Build command: `npm run build`
+- Root directory: repository root (`.`)
+
+After the GitHub repo is connected to the Vercel project, Vercel will deploy
+automatically from Git:
+
+- pushes to `main` create production deployments
+- pull requests and non-production branches create preview deployments
+
+No application environment variables are required for the current static site.
+The local `.vercel/` directory is intentionally ignored; Vercel stores the
+project link in its own dashboard and builds from the committed repo contents.
+
+For manual verification from the project root:
+
+```bash
+npm ci
+npm run build
+```
+
+Any Next.js host (Vercel, Railway, Netlify, self-host) can also run `npm run build` then `npm start`. The service listens on `$PORT`.
 
 ## Project layout
 
