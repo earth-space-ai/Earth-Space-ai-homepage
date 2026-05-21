@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { OrbitalHero } from "@/components/OrbitalHero";
-import { skillGroups, people, ORG_URL, ORG_NAME } from "@/lib/skills";
+import { skillGroups, ORG_URL, ORG_NAME } from "@/lib/skills";
 
 export const metadata: Metadata = {
   title: `${ORG_NAME} · Skill packages for Earth and space system models`,
@@ -9,13 +9,6 @@ export const metadata: Metadata = {
 };
 
 const totalSkills = skillGroups.reduce((n, g) => n + g.skills.length, 0);
-
-function slugifyName(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
 
 export default function HomePage() {
   return (
@@ -212,56 +205,6 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      <section className="stakes" id="partners">
-        <div className="stakes-inner">
-          <div className="stakes-main">
-            <span className="mono reveal">— People</span>
-            <h2 className="stakes-title reveal">
-              Maintained by collaborators, part of the broader effort.
-            </h2>
-            <div className="stakes-body directions-body reveal">
-              <ul className="people-grid">
-                {people.map((p) => {
-                  const slug = slugifyName(p.name);
-                  return (
-                    <li key={p.name} className="person">
-                      <div
-                        className="person-avatar"
-                        role="img"
-                        aria-label={p.name}
-                        data-name={p.name}
-                        data-photo-path={`/people/${slug}.jpg`}
-                      >
-                        <span className="person-avatar-name">{p.name}</span>
-                      </div>
-                      <div className="person-meta">
-                        <div className={`person-name${p.author ? " is-author" : ""}`}>
-                          {p.name}
-                          {p.note ? <span className="person-note"> {p.note}</span> : null}
-                        </div>
-                        {p.affiliation ? (
-                          <div className="person-affil">{p.affiliation}</div>
-                        ) : null}
-                        {p.github ? (
-                          <a
-                            className="person-gh"
-                            href={`https://github.com/${p.github}`}
-                            target="_blank"
-                            rel="noopener"
-                          >
-                            @{p.github}
-                          </a>
-                        ) : null}
-                      </div>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
 
