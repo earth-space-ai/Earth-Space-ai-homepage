@@ -227,7 +227,7 @@ export default function HomePage() {
         </p>
         <p className="reveal coda-sub">
           Contact:{" "}
-          <a href="mailto:ktktwu@utexas.edu">ktktwu@utexas.edu</a>
+          <a href="mailto:ktwu@utexas.edu">ktwu@utexas.edu</a>
         </p>
         <div className="ctas reveal">
           <a className="btn primary" href={ORG_URL} target="_blank" rel="noopener">
