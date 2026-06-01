@@ -1,0 +1,629 @@
+:root {
+  --bg: #f4efe3;
+  --paper: rgba(255, 250, 241, 0.78);
+  --ink: #14261f;
+  --muted: #5d6c65;
+  --teal: #1d5b57;
+  --rust: #b35c2e;
+  --gold: #d1a54a;
+  --line: rgba(20, 38, 31, 0.14);
+  --shadow: 0 20px 70px rgba(22, 30, 27, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(209, 165, 74, 0.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(29, 91, 87, 0.16), transparent 35%),
+    linear-gradient(180deg, #f7f2e7 0%, #efe6d4 100%);
+  color: var(--ink);
+  font-family: Charter, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(20, 38, 31, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 38, 31, 0.025) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+.deck-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 20px 28px 24px;
+  gap: 16px;
+}
+
+.deck-header,
+.deck-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.deck-mark {
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.deck-meta,
+.deck-help {
+  display: flex;
+  gap: 18px;
+}
+
+.slides {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.slide {
+  display: none;
+  width: min(1200px, 100%);
+  min-height: min(760px, calc(100vh - 170px));
+  background: var(--paper);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  padding: 52px 60px;
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
+.slide::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: -90px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(29, 91, 87, 0.12), transparent 70%);
+}
+
+.slide.active {
+  display: block;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--rust);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(3.2rem, 6vw, 5.4rem);
+  line-height: 0.95;
+  margin-bottom: 20px;
+  max-width: 9ch;
+}
+
+h2 {
+  font-size: clamp(2.2rem, 3.6vw, 3.3rem);
+  line-height: 1.02;
+  margin-bottom: 26px;
+  max-width: 16ch;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+p,
+li,
+.task-row,
+.bar-note,
+.footer-note,
+.quote-card,
+.status-card,
+.metric span {
+  font-size: 1.12rem;
+  line-height: 1.45;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+li + li {
+  margin-top: 0.4em;
+}
+
+.lede {
+  max-width: 22ch;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.authors {
+  margin-top: -4px;
+  margin-bottom: 26px;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.hero-grid,
+.stats-row,
+.three-up,
+.pipeline,
+.status-grid,
+.chart-table {
+  display: grid;
+  gap: 16px;
+}
+
+.chart-table {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  align-items: start;
+}
+
+.hero-grid {
+  margin-top: 34px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.hero-card,
+.panel,
+.chart-card,
+.status-card,
+.quote-card,
+.task-card,
+.metric,
+.pipe-step {
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 22px 24px;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--teal);
+}
+
+.label {
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.footer-note,
+.mini-note {
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  bottom: 40px;
+  color: var(--muted);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.callout {
+  font-size: 1.45rem;
+  line-height: 1.35;
+  margin-bottom: 18px;
+}
+
+.quote-card {
+  border-left: 5px solid var(--gold);
+}
+
+.quote-card p {
+  font-size: 1.28rem;
+  line-height: 1.38;
+  margin-bottom: 0;
+}
+
+.quote-label,
+.chart-label {
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.three-up {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.bar-note {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-left: 5px solid var(--teal);
+  background: rgba(29, 91, 87, 0.08);
+  border-radius: 14px;
+  max-width: 52rem;
+}
+
+.task-card {
+  display: grid;
+  gap: 0;
+  padding: 10px 22px;
+}
+
+.task-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.task-row:last-child {
+  border-bottom: 0;
+}
+
+.task-row span:first-child {
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.stats-row {
+  margin-top: 22px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.metric strong {
+  display: block;
+  font-size: 2.2rem;
+  color: var(--rust);
+}
+
+.metric span {
+  display: block;
+  color: var(--muted);
+}
+
+.pipeline {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pipe-num {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 14px;
+  background: var(--teal);
+  color: white;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-weight: 700;
+}
+
+.bar-group {
+  display: grid;
+  gap: 14px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 54px 1fr 44px;
+  gap: 12px;
+  align-items: center;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.bar {
+  height: 16px;
+  background: rgba(20, 38, 31, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--teal), var(--gold));
+}
+
+.compact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.compact-list li {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(20, 38, 31, 0.05);
+}
+
+.wide {
+  margin-top: 22px;
+}
+
+.status-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.status-card.done {
+  border-top: 6px solid var(--teal);
+}
+
+.status-card.progress {
+  border-top: 6px solid var(--rust);
+}
+
+.takeaway {
+  max-width: 54rem;
+}
+
+.big-line {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.progress-track {
+  width: 320px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(20, 38, 31, 0.08);
+  overflow: hidden;
+}
+
+#progress-bar {
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--rust), var(--teal));
+  border-radius: inherit;
+}
+
+@media (max-width: 900px) {
+  .deck-shell {
+    padding: 14px;
+  }
+
+  .slide {
+    min-height: calc(100vh - 140px);
+    padding: 34px 24px 78px;
+    border-radius: 20px;
+  }
+
+  .hero-grid,
+  .three-up,
+  .stats-row,
+  .two-col,
+  .pipeline,
+  .status-grid,
+  .chart-table {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-note,
+  .mini-note {
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+  }
+
+  .task-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .progress-track {
+    width: 160px;
+  }
+
+  .deck-footer {
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@page {
+  size: 13.333in 7.5in;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    background: white;
+  }
+
+  body::before,
+  .deck-header,
+  .deck-footer {
+    display: none !important;
+  }
+
+  .deck-shell {
+    display: block;
+    min-height: auto;
+    padding: 0;
+    gap: 0;
+  }
+
+  .slides {
+    display: block;
+  }
+
+  .slide,
+  .slide.active {
+    display: block !important;
+    width: 13.333in;
+    min-height: 7.5in;
+    height: 7.5in;
+    margin: 0;
+    padding: 0.5in 0.65in;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    background:
+      radial-gradient(circle at top left, rgba(209, 165, 74, 0.18), transparent 30%),
+      radial-gradient(circle at bottom right, rgba(29, 91, 87, 0.16), transparent 35%),
+      linear-gradient(180deg, #f7f2e7 0%, #efe6d4 100%);
+    break-after: page;
+    page-break-after: always;
+    overflow: hidden;
+  }
+
+  .slide:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  h1 {
+    font-size: 3.7rem;
+    margin-bottom: 14px;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+    margin-bottom: 18px;
+    max-width: 18ch;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  p,
+  li,
+  .task-row,
+  .bar-note,
+  .footer-note,
+  .quote-card,
+  .status-card,
+  .metric span {
+    font-size: 0.97rem;
+    line-height: 1.33;
+  }
+
+  .lede,
+  .callout,
+  .big-line {
+    font-size: 1.45rem;
+    line-height: 1.2;
+  }
+
+  .authors {
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+  }
+
+  .quote-card p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .hero-card,
+  .panel,
+  .chart-card,
+  .status-card,
+  .quote-card,
+  .task-card,
+  .metric,
+  .pipe-step {
+    padding: 16px 18px;
+  }
+
+  .stats-row,
+  .hero-grid,
+  .three-up,
+  .pipeline,
+  .status-grid,
+  .chart-table {
+    gap: 12px;
+  }
+
+  .stats-row {
+    margin-top: 16px;
+  }
+
+  .metric strong {
+    font-size: 1.8rem;
+  }
+
+  .bar-note {
+    margin-top: 12px;
+    padding: 12px 14px;
+  }
+
+  .task-row {
+    padding: 12px 0;
+  }
+
+  .bar-group,
+  .compact-list {
+    gap: 8px;
+  }
+
+  .compact-list li {
+    padding: 9px 12px;
+  }
+
+  .footer-note,
+  .mini-note {
+    left: 0.65in;
+    right: 0.65in;
+    bottom: 0.35in;
+    font-size: 0.9rem;
+    line-height: 1.25;
+  }
+}

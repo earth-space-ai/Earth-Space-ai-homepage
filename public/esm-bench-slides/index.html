@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESM-bench Slides</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="deck-shell">
+    <header class="deck-header">
+      <div class="deck-mark">ESM-bench</div>
+      <div class="deck-meta">
+        <span id="slide-counter">1 / 10</span>
+        <span>8 min prelim</span>
+      </div>
+    </header>
+
+    <main class="slides">
+      <section class="slide active title-slide" data-title="Title">
+        <div class="eyebrow">April 2026</div>
+        <h1>ESM-bench</h1>
+        <p class="lede">
+          A benchmark for evaluating whether AI coding agents understand Earth System Model
+          physics and code together.
+        </p>
+        <p class="authors">Koutian Wu · Yuxuan Cao</p>
+        <div class="hero-grid">
+          <div class="hero-card">
+            <span class="stat">107</span>
+            <span class="label">evaluated tasks</span>
+          </div>
+          <div class="hero-card">
+            <span class="stat">3</span>
+            <span class="label">evaluated codebases</span>
+          </div>
+          <div class="hero-card">
+            <span class="stat">4</span>
+            <span class="label">physics task types</span>
+          </div>
+          <div class="hero-card">
+            <span class="stat">8</span>
+            <span class="label">ESM roadmap</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-title="Motivation">
+        <div class="eyebrow">1. Motivation</div>
+        <h2>Why benchmark AI on Earth System Model development?</h2>
+        <div class="two-col">
+          <div>
+            <p class="callout">
+              ESMs are large Fortran/C systems where a small code edit can change long-horizon
+              climate behavior.
+            </p>
+            <ul>
+              <li>Development work mixes scientific reasoning, legacy HPC code, and physical constraints.</li>
+              <li>Tasks include bug fixing, parameter changes, scheme switching, and process edits.</li>
+              <li>A model can compile and still be scientifically wrong.</li>
+            </ul>
+          </div>
+          <div class="quote-card">
+            <div class="quote-label">Central Question</div>
+            <p>
+              Can an AI agent produce code that is not just executable, but physically valid:
+              conserving mass, respecting bounds, and improving agreement with observations?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-title="Gap">
+        <div class="eyebrow">2. Benchmark Gap</div>
+        <h2>Existing coding benchmarks miss the failure mode we care about</h2>
+        <div class="three-up">
+          <article class="panel">
+            <h3>Language gap</h3>
+            <p>Most benchmarks are Python-first. ESM work is dominated by Fortran 90/2008 and C.</p>
+          </article>
+          <article class="panel">
+            <h3>Physics gap</h3>
+            <p>Passing tests is not enough if the patch breaks conservation laws or parameter bounds.</p>
+          </article>
+          <article class="panel">
+            <h3>Validation gap</h3>
+            <p>Real scientific changes must be judged against observations, not only unit or regression tests.</p>
+          </article>
+        </div>
+        <div class="bar-note">Target failure mode: code that runs but is physically wrong.</div>
+      </section>
+
+      <section class="slide" data-title="Task">
+        <div class="eyebrow">3. Benchmark Object</div>
+        <h2>Each task is a real developer change, reconstructed as an agent challenge</h2>
+        <div class="task-card">
+          <div class="task-row"><span>Task input</span><span>description + scientific background + physical constraints</span></div>
+          <div class="task-row"><span>Starting point</span><span>parent-commit source snapshot</span></div>
+          <div class="task-row"><span>Target</span><span>unified diff matching a real ESM developer change</span></div>
+          <div class="task-row"><span>Scoring</span><span>computational correctness and physical correctness</span></div>
+        </div>
+      </section>
+
+      <section class="slide" data-title="Coverage">
+        <div class="eyebrow">4. Coverage</div>
+        <h2>Preliminary evaluation covers 3 codebases; the roadmap spans 8 ESMs</h2>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Evaluated now</h3>
+            <ul>
+              <li>Noah-MP: land surface, Fortran 90</li>
+              <li>CLM5: land + biogeochemistry, Fortran 90</li>
+              <li>MOM6: ocean dynamics, Fortran 90</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Full roadmap</h3>
+            <ul>
+              <li>SUMMA, ParFlow, VIC</li>
+              <li>WRF and E3SM</li>
+              <li>Land, hydrology, ocean, atmosphere, coupled ESMs</li>
+              <li>Fortran 90/2008 and C</li>
+            </ul>
+          </div>
+        </div>
+        <div class="stats-row">
+          <div class="metric"><strong>50</strong><span>CLM5 tasks</span></div>
+          <div class="metric"><strong>37</strong><span>Noah-MP tasks</span></div>
+          <div class="metric"><strong>20</strong><span>MOM6 tasks</span></div>
+          <div class="metric"><strong>107</strong><span>total evaluated</span></div>
+        </div>
+      </section>
+
+      <section class="slide" data-title="Pipeline">
+        <div class="eyebrow">5. Construction Pipeline</div>
+        <h2>How tasks are built</h2>
+        <div class="pipeline">
+          <div class="pipe-step">
+            <span class="pipe-num">01</span>
+            <h3>Mine commits</h3>
+            <p>Scan public git history for physics-relevant Fortran/C changes.</p>
+          </div>
+          <div class="pipe-step">
+            <span class="pipe-num">02</span>
+            <h3>Classify commits</h3>
+            <p>Use keyword filters plus Gemini classification into PBF, PO, PSS, PRM, or discard.</p>
+          </div>
+          <div class="pipe-step">
+            <span class="pipe-num">03</span>
+            <h3>Generate task fields</h3>
+            <p>Create description, scientific background, and physical constraints.</p>
+          </div>
+          <div class="pipe-step">
+            <span class="pipe-num">04</span>
+            <h3>Freeze ground truth</h3>
+            <p>Store the parent source snapshot and real developer diff for evaluation.</p>
+          </div>
+        </div>
+        <div class="bar-note">All source commits are dated before 2023-10-01.</div>
+      </section>
+
+      <section class="slide" data-title="Dataset">
+        <div class="eyebrow">6. Preliminary Results</div>
+        <h2>Current dataset snapshot</h2>
+        <div class="chart-table">
+          <div class="chart-card">
+            <div class="chart-label">Task totals by category</div>
+            <div class="bar-group">
+              <div class="bar-row"><span>PRM</span><div class="bar"><i style="width: 100%"></i></div><strong>47</strong></div>
+              <div class="bar-row"><span>PBF</span><div class="bar"><i style="width: 83%"></i></div><strong>39</strong></div>
+              <div class="bar-row"><span>PSS</span><div class="bar"><i style="width: 32%"></i></div><strong>15</strong></div>
+              <div class="bar-row"><span>PO</span><div class="bar"><i style="width: 13%"></i></div><strong>6</strong></div>
+            </div>
+          </div>
+          <div class="chart-card">
+            <div class="chart-label">Evaluated codebases</div>
+            <ul class="compact-list">
+              <li>CLM5: 50</li>
+              <li>Noah-MP: 37</li>
+              <li>MOM6: 20</li>
+              <li>Total: 107 evaluated tasks</li>
+              <li>Roadmap: 8 ESM repositories</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-title="Evaluation">
+        <div class="eyebrow">7. Evaluation</div>
+        <h2>Dual-correctness scoring separates “runs” from “is scientifically right”</h2>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Computational correctness</h3>
+            <ul>
+              <li>Build success</li>
+              <li>Runtime completion</li>
+              <li>Regression checks</li>
+              <li>Valid output artifacts</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Physical correctness</h3>
+            <ul>
+              <li>Conservation laws hold</li>
+              <li>Physical bounds respected</li>
+              <li>Agreement with observational targets improves</li>
+              <li>Primary metrics: Pass@k and PhysViolation rate</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bar-note">Main point: build success and physical validity should be reported separately.</div>
+      </section>
+
+      <section class="slide" data-title="Status">
+        <div class="eyebrow">8. Current Status</div>
+        <h2>What is done now, and what is still missing</h2>
+        <div class="status-grid">
+          <div class="status-card done">
+            <h3>Complete</h3>
+            <ul>
+              <li>Task mining and generation pipeline</li>
+              <li>107-task preliminary evaluated corpus</li>
+              <li>Taxonomy and dual-correctness framing</li>
+            </ul>
+          </div>
+          <div class="status-card progress">
+            <h3>Next</h3>
+            <ul>
+              <li>Extend from 3 evaluated codebases to the 8-ESM roadmap</li>
+              <li>Execution harness for build/run validation</li>
+              <li>Automated physical-metric evaluation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-title="Takeaway">
+        <div class="eyebrow">9. Takeaway</div>
+        <h2>ESM-bench asks a sharper question than standard coding benchmarks</h2>
+        <div class="takeaway">
+          <p class="big-line">Can an agent patch scientific code without breaking the science?</p>
+          <ul>
+            <li>Real commits, real ESMs, real physical constraints.</li>
+            <li>Preliminary milestone: 107 evaluated tasks across 3 codebases.</li>
+            <li>Full roadmap: expand coverage across 8 ESM repositories.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="deck-footer">
+      <div class="progress-track"><div id="progress-bar"></div></div>
+      <div class="deck-help">← → navigate · Home / End jump · F fullscreen</div>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
