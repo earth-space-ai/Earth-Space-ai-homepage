@@ -137,38 +137,37 @@ export default function HomePage() {
           <div className="featured-ai-copy">
             <span className="mono reveal">Featured AI Blog</span>
             <h2 className="featured-ai-title reveal">
-              Koutian Wu on AI agents for Earth and space models.
+              Zesen Huang on heliophysics AI skills.
             </h2>
             <p className="featured-ai-lede reveal">
-              A profile of benchmark design, physics-aware code assistance,
-              scientific skill extraction, and daily AI-assisted research
-              workflows. Responding editor: Zesen Huang.
+              A preview of how AI skills can support reproducible heliophysics
+              research. The full interview is coming soon.
             </p>
             <div className="featured-ai-actions reveal">
               <a
                 className="btn primary"
-                href="/blog/koutian-wu-ai-for-earth-space-modeling"
+                href="/blog/zesen-huang-heliophysics-ai-skills"
               >
-                Read the feature <span className="arrow">→</span>
+                Preview the feature <span className="arrow">→</span>
               </a>
             </div>
           </div>
 
           <a
             className="featured-ai-card reveal"
-            href="/blog/koutian-wu-ai-for-earth-space-modeling"
+            href="/blog/zesen-huang-heliophysics-ai-skills"
           >
             <div className="featured-ai-card-photo">
-              <img src="/people/KW-SF.png" alt="Koutian Wu" />
+              <img src="/people/zesen.JPG" alt="Zesen Huang" />
             </div>
             <div className="featured-ai-card-body">
               <span className="card-eyebrow">Featured AI Blog</span>
-              <h3>Koutian Wu, AI for Earth and Space Models.</h3>
+              <h3>Zesen Huang, Heliophysics AI Skills.</h3>
               <p>
-                How evaluation, agent workflows, and scientific modeling meet
-                in one research practice.
+                A coming-soon conversation about reproducible AI-assisted
+                heliophysics research.
               </p>
-              <span className="featured-ai-card-link">Open article</span>
+              <span className="featured-ai-card-link">Open preview</span>
             </div>
           </a>
         </div>
