@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { OrbitalHero } from "@/components/OrbitalHero";
+import { getPostBySlug } from "@/lib/blogs";
 import { skillGroups, ORG_URL, ORG_NAME } from "@/lib/skills";
 
 export const metadata: Metadata = {
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
 };
 
 const totalSkills = skillGroups.reduce((n, g) => n + g.skills.length, 0);
+const featuredPost = getPostBySlug("zesen-huang-heliophysics-ai-skills")!;
+const featuredPostHref = `/blog/${featuredPost.slug}`;
 
 export default function HomePage() {
   return (
@@ -137,16 +140,15 @@ export default function HomePage() {
           <div className="featured-ai-copy">
             <span className="mono reveal">Featured AI Blog</span>
             <h2 className="featured-ai-title reveal">
-              Zesen Huang on heliophysics AI skills.
+              {featuredPost.title}
             </h2>
             <p className="featured-ai-lede reveal">
-              A preview of how AI skills can support reproducible heliophysics
-              research. The full interview is coming soon.
+              {featuredPost.excerpt}
             </p>
             <div className="featured-ai-actions reveal">
               <a
                 className="btn primary"
-                href="/blog/zesen-huang-heliophysics-ai-skills"
+                href={featuredPostHref}
               >
                 Preview the feature <span className="arrow">→</span>
               </a>
@@ -155,14 +157,17 @@ export default function HomePage() {
 
           <a
             className="featured-ai-card reveal"
-            href="/blog/zesen-huang-heliophysics-ai-skills"
+            href={featuredPostHref}
           >
             <div className="featured-ai-card-photo">
-              <img src="/people/zesen.JPG" alt="Zesen Huang" />
+              <img
+                src={featuredPost.subjectPhoto}
+                alt={featuredPost.subjectName}
+              />
             </div>
             <div className="featured-ai-card-body">
               <span className="card-eyebrow">Featured AI Blog</span>
-              <h3>Zesen Huang, Heliophysics AI Skills.</h3>
+              <h3>{featuredPost.title}</h3>
               <p>
                 A coming-soon conversation about reproducible AI-assisted
                 heliophysics research.
