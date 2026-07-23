@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 const totalSkills = skillGroups.reduce((n, g) => n + g.skills.length, 0);
 const featuredPost = getPostBySlug("zesen-huang-heliophysics-ai-skills")!;
 const featuredPostHref = `/blog/${featuredPost.slug}`;
+const featuredPostIsPublished = featuredPost.status === "published";
 
 export default function HomePage() {
   return (
@@ -150,7 +151,8 @@ export default function HomePage() {
                 className="btn primary"
                 href={featuredPostHref}
               >
-                Preview the feature <span className="arrow">→</span>
+                {featuredPostIsPublished ? "Read the feature" : "Preview the feature"}{" "}
+                <span className="arrow">→</span>
               </a>
             </div>
           </div>
@@ -168,11 +170,10 @@ export default function HomePage() {
             <div className="featured-ai-card-body">
               <span className="card-eyebrow">Featured AI Blog</span>
               <h3>{featuredPost.title}</h3>
-              <p>
-                A coming-soon conversation about reproducible AI-assisted
-                heliophysics research.
-              </p>
-              <span className="featured-ai-card-link">Open preview</span>
+              <p>{featuredPost.excerpt}</p>
+              <span className="featured-ai-card-link">
+                {featuredPostIsPublished ? "Open article" : "Open preview"}
+              </span>
             </div>
           </a>
         </div>
