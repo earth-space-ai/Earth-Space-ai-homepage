@@ -214,5 +214,5 @@ export const ROLE_SECTIONS: {
 
 export const ORG_HANDLE = "earth-space-ai";
 export const ORG_URL = "https://github.com/earth-space-ai";
-export const ORG_NAME = "earth-space-ai";
+export const ORG_NAME = "Earth-Space AI";
 export const SITE_TITLE = "Earth and Space Agent Skills";
