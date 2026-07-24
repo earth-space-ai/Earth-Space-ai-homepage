@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
       "A profile of benchmark design, physics-aware code assistance, scientific skill extraction, and daily AI-assisted research workflows.",
   },
   {
-    slug: FEATURED_BLOG_SLUG,
+    slug: BLOG_SLUGS.zesenHuang,
     title: "Zesen Huang, AI agents for heliophysics modeling.",
     subjectName: "Zesen Huang",
     subjectAffiliation: "Postdoc · UCLA",
