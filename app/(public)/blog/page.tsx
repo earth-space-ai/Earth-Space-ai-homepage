@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { ORG_NAME } from "@/lib/skills";
+import { ORG_NAME, SITE_TITLE } from "@/lib/skills";
 import { blogPosts, formatPublished } from "@/lib/blogs";
 
 export const metadata: Metadata = {
-  title: `Blog · ${ORG_NAME}`,
+  title: `Blog · ${SITE_TITLE}`,
   description:
-    "Featured AI blog index for earth-space-ai.org: profiles of researchers working at the intersection of Earth, space, and AI agents.",
+    "Featured AI blog index for Earth and Space Agent Skills: profiles of researchers working at the intersection of Earth, space, and AI agents.",
   alternates: {
     canonical: "/blog",
   },
@@ -21,7 +21,7 @@ export default function BlogIndexPage() {
         <div className="page-hero-inner">
           <div>
             <div className="crumbs reveal">
-              <a href="/">{ORG_NAME}</a>
+              <a href="/">{SITE_TITLE}</a>
               <span className="sep">/</span>
               <span className="here">Blog</span>
             </div>

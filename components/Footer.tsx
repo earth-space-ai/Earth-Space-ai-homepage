@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { skillGroups, ORG_URL, ORG_NAME } from "@/lib/skills";
+import { skillGroups, ORG_URL, ORG_NAME, SITE_TITLE } from "@/lib/skills";
 
 function formatUtcClock(d: Date): string {
   const pad = (n: number) => String(n).padStart(2, "0");
@@ -28,7 +28,7 @@ export function Footer() {
             <span className="footer-logo" aria-hidden="true">
               <img src="/logo/Earth-Space-Modeling-logo.png" alt="" />
             </span>
-            {ORG_NAME}
+            {SITE_TITLE}
           </div>
           <p className="colophon">
             Procedural-knowledge skills for Earth, planetary, and space

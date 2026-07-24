@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { ORG_NAME } from "@/lib/skills";
+import { BLOG_SLUGS } from "@/lib/blogs";
+import { ORG_NAME, SITE_TITLE } from "@/lib/skills";
 
-const articlePath = "/blog/chuanfei-dong-space-physics-modeling";
+const articlePath = `/blog/${BLOG_SLUGS.chuanfeiDong}`;
 
 const focusCards = [
   {
@@ -63,7 +64,7 @@ const sources = [
 ];
 
 export const metadata: Metadata = {
-  title: `Chuanfei Dong, AI for the space environments we want to understand · ${ORG_NAME}`,
+  title: `Chuanfei Dong, AI for the space environments we want to understand · ${SITE_TITLE}`,
   description:
     "A featured AI blog profile of Chuanfei Dong (Boston University): using a Fourier Neural Operator inside a plasma model to make space weather and exoplanet habitability tractable, with the Mauve UV mission as the observational counterpart.",
   alternates: {
@@ -78,7 +79,7 @@ export default function ChuanfeiDongFeaturedAiBlogPage() {
         <div className="page-hero-inner">
           <div>
             <div className="crumbs reveal">
-              <a href="/">{ORG_NAME}</a>
+              <a href="/">{SITE_TITLE}</a>
               <span className="sep">/</span>
               <span className="here">Featured AI Blog</span>
             </div>

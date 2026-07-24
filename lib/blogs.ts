@@ -1,4 +1,10 @@
 export type BlogStatus = "published" | "coming-soon";
+export const BLOG_SLUGS = {
+  koutianWu: "koutian-wu-ai-for-earth-space-modeling",
+  zesenHuang: "zesen-huang-heliophysics-ai-skills",
+  chuanfeiDong: "chuanfei-dong-space-physics-modeling",
+} as const;
+export const FEATURED_BLOG_SLUG = BLOG_SLUGS.zesenHuang;
 
 export type BlogPost = {
   slug: string;            // URL segment under /blog/
@@ -14,7 +20,7 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "koutian-wu-ai-for-earth-space-modeling",
+    slug: BLOG_SLUGS.koutianWu,
     title: "Koutian Wu, AI for Earth and Space Models.",
     subjectName: "Koutian Wu",
     subjectAffiliation: "PhD Student · UT Austin",
@@ -26,7 +32,7 @@ export const blogPosts: BlogPost[] = [
       "A profile of benchmark design, physics-aware code assistance, scientific skill extraction, and daily AI-assisted research workflows.",
   },
   {
-    slug: "zesen-huang-heliophysics-ai-skills",
+    slug: BLOG_SLUGS.zesenHuang,
     title: "Zesen Huang, AI agents for heliophysics modeling.",
     subjectName: "Zesen Huang",
     subjectAffiliation: "Postdoc · UCLA",
@@ -34,10 +40,11 @@ export const blogPosts: BlogPost[] = [
     editorName: "Koutian Wu",
     publishedISO: "",
     status: "coming-soon",
-    excerpt: "Featured blog coming soon. Edited by Koutian Wu.",
+    excerpt:
+      "The forthcoming profile will explore how AI-agent skills can support reproducible heliophysics modeling and research workflows.",
   },
   {
-    slug: "chuanfei-dong-space-physics-modeling",
+    slug: BLOG_SLUGS.chuanfeiDong,
     title: "Chuanfei Dong, AI for the space environments we want to understand.",
     subjectName: "Chuanfei Dong",
     subjectAffiliation: "Professor · Boston University",
@@ -66,6 +73,14 @@ blogPosts.sort((a, b) => {
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
+}
+
+export function getRequiredPostBySlug(slug: string): BlogPost {
+  const post = getPostBySlug(slug);
+  if (!post) {
+    throw new Error(`Blog post not found: ${slug}`);
+  }
+  return post;
 }
 
 const MONTHS = [

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { skillGroups, ORG_URL, ORG_NAME } from "@/lib/skills";
+import { skillGroups, ORG_URL, SITE_TITLE } from "@/lib/skills";
 
 export function Nav() {
   const pathname = usePathname() || "/";
@@ -76,7 +76,7 @@ export function Nav() {
           <span className="logo" aria-hidden="true">
             <img src="/logo/Earth-Space-Modeling-logo.png" alt="" />
           </span>
-          <span>{ORG_NAME}</span>
+          <span>{SITE_TITLE}</span>
         </a>
 
         <div className="nav-links">

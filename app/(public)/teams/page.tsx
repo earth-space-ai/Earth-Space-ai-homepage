@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { people, ROLE_SECTIONS, ORG_NAME, type Person, type PersonRole } from "@/lib/skills";
+import { people, ROLE_SECTIONS, ORG_NAME, SITE_TITLE, type Person, type PersonRole } from "@/lib/skills";
 
 export const metadata: Metadata = {
-  title: `Teams · ${ORG_NAME}`,
+  title: `Teams · ${SITE_TITLE}`,
   description:
-    "People maintaining earth-space-ai.org: scientific committee, executive committee, and scholars.",
+    "People maintaining Earth and Space Agent Skills: scientific committee, executive committee, and scholars.",
 };
 
 function autoInitials(name: string): string {
@@ -94,7 +94,7 @@ export default function TeamsPage() {
         <div className="page-hero-inner">
           <div>
             <div className="crumbs reveal">
-              <a href="/">{ORG_NAME}</a>
+              <a href="/">{SITE_TITLE}</a>
               <span className="sep">/</span>
               <span className="here">Teams</span>
             </div>

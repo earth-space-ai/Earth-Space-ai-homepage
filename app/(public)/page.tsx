@@ -1,14 +1,24 @@
 import type { Metadata } from "next";
 import { OrbitalHero } from "@/components/OrbitalHero";
-import { skillGroups, ORG_URL, ORG_NAME } from "@/lib/skills";
+import {
+  FEATURED_BLOG_SLUG,
+  getRequiredPostBySlug,
+} from "@/lib/blogs";
+import { skillGroups, ORG_URL, SITE_TITLE } from "@/lib/skills";
 
 export const metadata: Metadata = {
-  title: `${ORG_NAME} · Skill packages for Earth and space system models`,
+  title: `${SITE_TITLE} · Skill packages for Earth and space system models`,
   description:
     "Curated, progressive-disclosure skill packages for Earth and space system models. Designed to be loaded by AI coding agents and to serve as durable human-readable references.",
 };
 
 const totalSkills = skillGroups.reduce((n, g) => n + g.skills.length, 0);
+const featuredPost = getRequiredPostBySlug(FEATURED_BLOG_SLUG);
+const featuredPostHref = `/blog/${featuredPost.slug}`;
+const featuredPostIsPublished = featuredPost.status === "published";
+const featuredPostEyebrow = featuredPostIsPublished
+  ? "Featured AI Blog"
+  : "Featured AI Blog · Coming soon";
 
 export default function HomePage() {
   return (
@@ -25,7 +35,7 @@ export default function HomePage() {
           <div className="hero-body-left">
             <p className="hero-sub" id="subhead">
               <span>
-                <strong className="hero-accent">{ORG_NAME}</strong> is a
+                <strong className="hero-accent">{SITE_TITLE}</strong> is a
                 collection of skill packages for Earth, planetary, and space
                 science models.
               </span>
@@ -135,40 +145,41 @@ export default function HomePage() {
       <section className="featured-ai-band" id="featured-ai">
         <div className="featured-ai-inner">
           <div className="featured-ai-copy">
-            <span className="mono reveal">Featured AI Blog</span>
+            <span className="mono reveal">{featuredPostEyebrow}</span>
             <h2 className="featured-ai-title reveal">
-              Koutian Wu on AI agents for Earth and space models.
+              {featuredPost.title}
             </h2>
             <p className="featured-ai-lede reveal">
-              A profile of benchmark design, physics-aware code assistance,
-              scientific skill extraction, and daily AI-assisted research
-              workflows. Responding editor: Zesen Huang.
+              {featuredPost.excerpt}
             </p>
             <div className="featured-ai-actions reveal">
               <a
                 className="btn primary"
-                href="/blog/koutian-wu-ai-for-earth-space-modeling"
+                href={featuredPostHref}
               >
-                Read the feature <span className="arrow">→</span>
+                {featuredPostIsPublished ? "Read the feature" : "Preview the feature"}{" "}
+                <span className="arrow">→</span>
               </a>
             </div>
           </div>
 
           <a
             className="featured-ai-card reveal"
-            href="/blog/koutian-wu-ai-for-earth-space-modeling"
+            href={featuredPostHref}
           >
             <div className="featured-ai-card-photo">
-              <img src="/people/KW-SF.png" alt="Koutian Wu" />
+              <img
+                src={featuredPost.subjectPhoto}
+                alt={featuredPost.subjectName}
+              />
             </div>
             <div className="featured-ai-card-body">
               <span className="card-eyebrow">Featured AI Blog</span>
-              <h3>Koutian Wu, AI for Earth and Space Models.</h3>
-              <p>
-                How evaluation, agent workflows, and scientific modeling meet
-                in one research practice.
-              </p>
-              <span className="featured-ai-card-link">Open article</span>
+              <h3>{featuredPost.title}</h3>
+              <p>{featuredPost.excerpt}</p>
+              <span className="featured-ai-card-link">
+                {featuredPostIsPublished ? "Open article" : "Open preview"}
+              </span>
             </div>
           </a>
         </div>

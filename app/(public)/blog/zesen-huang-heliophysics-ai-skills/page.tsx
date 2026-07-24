@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { ORG_NAME } from "@/lib/skills";
-import { getPostBySlug } from "@/lib/blogs";
+import { SITE_TITLE } from "@/lib/skills";
+import { BLOG_SLUGS, getRequiredPostBySlug } from "@/lib/blogs";
 
-const slug = "zesen-huang-heliophysics-ai-skills";
-const post = getPostBySlug(slug)!;
+const slug = BLOG_SLUGS.zesenHuang;
+const post = getRequiredPostBySlug(slug);
 const articlePath = `/blog/${slug}`;
 
 export const metadata: Metadata = {
-  title: `${post.title} · ${ORG_NAME}`,
+  title: `${post.title} · ${SITE_TITLE}`,
   description:
     "Featured AI blog placeholder for Zesen Huang. The full profile is in preparation.",
   alternates: {
@@ -22,7 +22,7 @@ export default function ZesenHuangFeaturedAiBlogPage() {
         <div className="page-hero-inner">
           <div>
             <div className="crumbs reveal">
-              <a href="/">{ORG_NAME}</a>
+              <a href="/">{SITE_TITLE}</a>
               <span className="sep">/</span>
               <a href="/blog">Blog</a>
               <span className="sep">/</span>
@@ -62,8 +62,8 @@ export default function ZesenHuangFeaturedAiBlogPage() {
         <div className="ai-article-layout">
           <article className="article-prose reveal">
             <p className="article-lede">
-              This featured blog is in preparation. Edited by Koutian Wu, it
-              will introduce Zesen Huang&apos;s work on AI agents for
+              This featured blog is in preparation. Edited by {post.editorName},
+              it will introduce Zesen Huang&apos;s work on AI agents for
               heliophysics modeling at UCLA. Check back soon.
             </p>
           </article>
