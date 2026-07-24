@@ -3,6 +3,7 @@
 Homepage for **Earth and Space Agent Skills**, hosted at
 [earth-space-ai.org](https://earth-space-ai.org) and maintained by the
 [earth-space-ai GitHub organization](https://github.com/earth-space-ai).
+This repository retains the slug `earth-modeling-agent-homepage`.
 
 Curated, progressive-disclosure skill packages for Earth, planetary, and space system models, packaged for AI agents and human researchers. The homepage is a static-friendly Next.js site that lists every skill repo by domain, links out to the upstream repos, and explains the layout of a skill package.
 

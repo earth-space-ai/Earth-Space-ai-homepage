@@ -174,7 +174,7 @@ export default function HomePage() {
               />
             </div>
             <div className="featured-ai-card-body">
-              <span className="card-eyebrow">{featuredPostEyebrow}</span>
+              <span className="card-eyebrow">Featured AI Blog</span>
               <h3>{featuredPost.title}</h3>
               <p>{featuredPost.excerpt}</p>
               <span className="featured-ai-card-link">

@@ -1,6 +1,8 @@
 export type BlogStatus = "published" | "coming-soon";
 export const BLOG_SLUGS = {
+  koutianWu: "koutian-wu-ai-for-earth-space-modeling",
   zesenHuang: "zesen-huang-heliophysics-ai-skills",
+  chuanfeiDong: "chuanfei-dong-space-physics-modeling",
 } as const;
 export const FEATURED_BLOG_SLUG = BLOG_SLUGS.zesenHuang;
 
@@ -18,7 +20,7 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "koutian-wu-ai-for-earth-space-modeling",
+    slug: BLOG_SLUGS.koutianWu,
     title: "Koutian Wu, AI for Earth and Space Models.",
     subjectName: "Koutian Wu",
     subjectAffiliation: "PhD Student · UT Austin",
@@ -39,10 +41,10 @@ export const blogPosts: BlogPost[] = [
     publishedISO: "",
     status: "coming-soon",
     excerpt:
-      "How AI-agent skills can support reproducible heliophysics modeling and research workflows.",
+      "The forthcoming profile will explore how AI-agent skills can support reproducible heliophysics modeling and research workflows.",
   },
   {
-    slug: "chuanfei-dong-space-physics-modeling",
+    slug: BLOG_SLUGS.chuanfeiDong,
     title: "Chuanfei Dong, AI for the space environments we want to understand.",
     subjectName: "Chuanfei Dong",
     subjectAffiliation: "Professor · Boston University",

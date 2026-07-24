@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import { BLOG_SLUGS } from "@/lib/blogs";
 import { ORG_NAME, SITE_TITLE } from "@/lib/skills";
 
-const articlePath = "/blog/koutian-wu-ai-for-earth-space-modeling";
+const articlePath = `/blog/${BLOG_SLUGS.koutianWu}`;
 
 const focusCards = [
   {
