@@ -1,5 +1,8 @@
 export type BlogStatus = "published" | "coming-soon";
-export const FEATURED_BLOG_SLUG = "zesen-huang-heliophysics-ai-skills";
+export const BLOG_SLUGS = {
+  zesenHuang: "zesen-huang-heliophysics-ai-skills",
+} as const;
+export const FEATURED_BLOG_SLUG = BLOG_SLUGS.zesenHuang;
 
 export type BlogPost = {
   slug: string;            // URL segment under /blog/
@@ -35,7 +38,8 @@ export const blogPosts: BlogPost[] = [
     editorName: "Koutian Wu",
     publishedISO: "",
     status: "coming-soon",
-    excerpt: "Featured blog coming soon. Edited by Koutian Wu.",
+    excerpt:
+      "How AI-agent skills can support reproducible heliophysics modeling and research workflows.",
   },
   {
     slug: "chuanfei-dong-space-physics-modeling",

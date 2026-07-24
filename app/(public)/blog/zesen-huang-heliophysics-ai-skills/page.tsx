@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { SITE_TITLE } from "@/lib/skills";
-import { getRequiredPostBySlug } from "@/lib/blogs";
+import { BLOG_SLUGS, getRequiredPostBySlug } from "@/lib/blogs";
 
-const slug = "zesen-huang-heliophysics-ai-skills";
+const slug = BLOG_SLUGS.zesenHuang;
 const post = getRequiredPostBySlug(slug);
 const articlePath = `/blog/${slug}`;
 
@@ -62,8 +62,8 @@ export default function ZesenHuangFeaturedAiBlogPage() {
         <div className="ai-article-layout">
           <article className="article-prose reveal">
             <p className="article-lede">
-              This featured blog is in preparation. Edited by Koutian Wu, it
-              will introduce Zesen Huang&apos;s work on AI agents for
+              This featured blog is in preparation. Edited by {post.editorName},
+              it will introduce Zesen Huang&apos;s work on AI agents for
               heliophysics modeling at UCLA. Check back soon.
             </p>
           </article>
