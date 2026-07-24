@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ORG_NAME } from "@/lib/skills";
+import { ORG_NAME, SITE_TITLE } from "@/lib/skills";
 
 const articlePath = "/blog/koutian-wu-ai-for-earth-space-modeling";
 
@@ -46,7 +46,7 @@ const sources = [
 ];
 
 export const metadata: Metadata = {
-  title: `Koutian Wu, AI for Earth and Space Models · ${ORG_NAME}`,
+  title: `Koutian Wu, AI for Earth and Space Models · ${SITE_TITLE}`,
   description:
     "A featured AI blog profile of Koutian Wu, focused on Earth system modeling, space physics, scientific agent evaluation, and daily AI-assisted research workflows.",
   alternates: {
@@ -61,7 +61,7 @@ export default function KoutianFeaturedAiBlogPage() {
         <div className="page-hero-inner">
           <div>
             <div className="crumbs reveal">
-              <a href="/">{ORG_NAME}</a>
+              <a href="/">{SITE_TITLE}</a>
               <span className="sep">/</span>
               <span className="here">Featured AI Blog</span>
             </div>

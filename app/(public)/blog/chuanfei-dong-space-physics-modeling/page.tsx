@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ORG_NAME } from "@/lib/skills";
+import { SITE_TITLE } from "@/lib/skills";
 
 const articlePath = "/blog/chuanfei-dong-space-physics-modeling";
 
@@ -63,7 +63,7 @@ const sources = [
 ];
 
 export const metadata: Metadata = {
-  title: `Chuanfei Dong, AI for the space environments we want to understand · ${ORG_NAME}`,
+  title: `Chuanfei Dong, AI for the space environments we want to understand · ${SITE_TITLE}`,
   description:
     "A featured AI blog profile of Chuanfei Dong (Boston University): using a Fourier Neural Operator inside a plasma model to make space weather and exoplanet habitability tractable, with the Mauve UV mission as the observational counterpart.",
   alternates: {
@@ -78,7 +78,7 @@ export default function ChuanfeiDongFeaturedAiBlogPage() {
         <div className="page-hero-inner">
           <div>
             <div className="crumbs reveal">
-              <a href="/">{ORG_NAME}</a>
+              <a href="/">{SITE_TITLE}</a>
               <span className="sep">/</span>
               <span className="here">Featured AI Blog</span>
             </div>
@@ -199,7 +199,7 @@ export default function ChuanfeiDongFeaturedAiBlogPage() {
               measure how loud the star actually is, and have a physics model
               fast enough to ask what that loudness does to the planet next
               to it. That is what AI for space looks like in Dong&apos;s
-              hands, and it is the through-line explored by {ORG_NAME}. The
+              hands, and it is the through-line explored by {SITE_TITLE}. The
               goal is not a faster plot. It is a working answer to
               whether a given world is a barren rock or still a candidate for
               an atmosphere.

@@ -4,10 +4,10 @@ import {
   getRequiredPostBySlug,
   ZESEN_FEATURED_BLOG_SLUG,
 } from "@/lib/blogs";
-import { skillGroups, ORG_URL, ORG_NAME } from "@/lib/skills";
+import { skillGroups, ORG_URL, SITE_TITLE } from "@/lib/skills";
 
 export const metadata: Metadata = {
-  title: `${ORG_NAME} · Skill packages for Earth and space system models`,
+  title: `${SITE_TITLE} · Skill packages for Earth and space system models`,
   description:
     "Curated, progressive-disclosure skill packages for Earth and space system models. Designed to be loaded by AI coding agents and to serve as durable human-readable references.",
 };
@@ -32,7 +32,7 @@ export default function HomePage() {
           <div className="hero-body-left">
             <p className="hero-sub" id="subhead">
               <span>
-                <strong className="hero-accent">{ORG_NAME}</strong> is a
+                <strong className="hero-accent">{SITE_TITLE}</strong> is a
                 collection of skill packages for Earth, planetary, and space
                 science models.
               </span>

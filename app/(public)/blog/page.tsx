@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { ORG_NAME } from "@/lib/skills";
+import { SITE_TITLE } from "@/lib/skills";
 import { blogPosts, formatPublished } from "@/lib/blogs";
 
 export const metadata: Metadata = {
-  title: `Blog · ${ORG_NAME}`,
+  title: `Blog · ${SITE_TITLE}`,
   description:
     "Featured AI blog index for Earth and Space Agent Skills: profiles of researchers working at the intersection of Earth, space, and AI agents.",
   alternates: {
@@ -21,7 +21,7 @@ export default function BlogIndexPage() {
         <div className="page-hero-inner">
           <div>
             <div className="crumbs reveal">
-              <a href="/">{ORG_NAME}</a>
+              <a href="/">{SITE_TITLE}</a>
               <span className="sep">/</span>
               <span className="here">Blog</span>
             </div>
@@ -34,7 +34,7 @@ export default function BlogIndexPage() {
           </div>
           <div className="standard-hero-copy">
             <p className="page-sub reveal">
-              Each post is edited by a member of the {ORG_NAME} community and
+              Each post is edited by a member of the {SITE_TITLE} community and
               pairs a working researcher with the methods, code, and evaluation
               habits they actually rely on.
             </p>

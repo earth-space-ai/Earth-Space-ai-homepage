@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ORG_NAME } from "@/lib/skills";
+import { SITE_TITLE } from "@/lib/skills";
 import {
   getRequiredPostBySlug,
   ZESEN_FEATURED_BLOG_SLUG,
@@ -10,7 +10,7 @@ const post = getRequiredPostBySlug(slug);
 const articlePath = `/blog/${slug}`;
 
 export const metadata: Metadata = {
-  title: `${post.title} · ${ORG_NAME}`,
+  title: `${post.title} · ${SITE_TITLE}`,
   description:
     "Featured AI blog placeholder for Zesen Huang. The full profile is in preparation.",
   alternates: {
@@ -25,7 +25,7 @@ export default function ZesenHuangFeaturedAiBlogPage() {
         <div className="page-hero-inner">
           <div>
             <div className="crumbs reveal">
-              <a href="/">{ORG_NAME}</a>
+              <a href="/">{SITE_TITLE}</a>
               <span className="sep">/</span>
               <a href="/blog">Blog</a>
               <span className="sep">/</span>

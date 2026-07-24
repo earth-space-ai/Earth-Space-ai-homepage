@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
+import { SITE_TITLE } from "@/lib/skills";
 import "./globals.css";
 import "./skin.css";
 
 export const metadata: Metadata = {
-  title:
-    "Earth and Space Agent Skills — Skill packages for Earth and space system models",
+  title: `${SITE_TITLE} — Skill packages for Earth and space system models`,
   description:
     "Curated, progressive-disclosure skill packages for Earth and space system models. Loadable by AI coding agents; readable by humans.",
   icons: {

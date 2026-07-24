@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { people, ROLE_SECTIONS, ORG_NAME, type Person, type PersonRole } from "@/lib/skills";
+import { people, ROLE_SECTIONS, SITE_TITLE, type Person, type PersonRole } from "@/lib/skills";
 
 export const metadata: Metadata = {
-  title: `Teams · ${ORG_NAME}`,
+  title: `Teams · ${SITE_TITLE}`,
   description:
     "People maintaining Earth and Space Agent Skills: scientific committee, executive committee, and scholars.",
 };
@@ -94,19 +94,19 @@ export default function TeamsPage() {
         <div className="page-hero-inner">
           <div>
             <div className="crumbs reveal">
-              <a href="/">{ORG_NAME}</a>
+              <a href="/">{SITE_TITLE}</a>
               <span className="sep">/</span>
               <span className="here">Teams</span>
             </div>
             <span className="page-idx reveal">§ The people</span>
             <h1 className="page-title reveal">Teams.</h1>
             <p className="page-thesis reveal">
-              The people behind {ORG_NAME}.
+              The people behind {SITE_TITLE}.
             </p>
           </div>
           <div className="standard-hero-copy">
             <p className="page-sub reveal">
-              {ORG_NAME} is a community of researchers, engineers, and
+              {SITE_TITLE} is a community of researchers, engineers, and
               open-source contributors building open Earth- and space-modeling
               skills for AI agents.
             </p>
