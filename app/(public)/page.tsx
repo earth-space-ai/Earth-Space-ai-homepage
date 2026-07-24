@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { OrbitalHero } from "@/components/OrbitalHero";
 import {
+  FEATURED_BLOG_SLUG,
   getRequiredPostBySlug,
-  ZESEN_FEATURED_BLOG_SLUG,
 } from "@/lib/blogs";
 import { skillGroups, ORG_URL, SITE_TITLE } from "@/lib/skills";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const totalSkills = skillGroups.reduce((n, g) => n + g.skills.length, 0);
-const featuredPost = getRequiredPostBySlug(ZESEN_FEATURED_BLOG_SLUG);
+const featuredPost = getRequiredPostBySlug(FEATURED_BLOG_SLUG);
 const featuredPostHref = `/blog/${featuredPost.slug}`;
 const featuredPostIsPublished = featuredPost.status === "published";
 const featuredPostEyebrow = featuredPostIsPublished

@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import { SITE_TITLE } from "@/lib/skills";
-import {
-  getRequiredPostBySlug,
-  ZESEN_FEATURED_BLOG_SLUG,
-} from "@/lib/blogs";
+import { getRequiredPostBySlug } from "@/lib/blogs";
 
-const slug = ZESEN_FEATURED_BLOG_SLUG;
+const slug = "zesen-huang-heliophysics-ai-skills";
 const post = getRequiredPostBySlug(slug);
 const articlePath = `/blog/${slug}`;
 

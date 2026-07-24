@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { people, ROLE_SECTIONS, SITE_TITLE, type Person, type PersonRole } from "@/lib/skills";
+import { people, ROLE_SECTIONS, ORG_NAME, SITE_TITLE, type Person, type PersonRole } from "@/lib/skills";
 
 export const metadata: Metadata = {
   title: `Teams · ${SITE_TITLE}`,
@@ -101,12 +101,12 @@ export default function TeamsPage() {
             <span className="page-idx reveal">§ The people</span>
             <h1 className="page-title reveal">Teams.</h1>
             <p className="page-thesis reveal">
-              The people behind {SITE_TITLE}.
+              The people behind {ORG_NAME}.
             </p>
           </div>
           <div className="standard-hero-copy">
             <p className="page-sub reveal">
-              {SITE_TITLE} is a community of researchers, engineers, and
+              {ORG_NAME} is a community of researchers, engineers, and
               open-source contributors building open Earth- and space-modeling
               skills for AI agents.
             </p>

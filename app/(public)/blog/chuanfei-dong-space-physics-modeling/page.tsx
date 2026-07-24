@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE_TITLE } from "@/lib/skills";
+import { ORG_NAME, SITE_TITLE } from "@/lib/skills";
 
 const articlePath = "/blog/chuanfei-dong-space-physics-modeling";
 
@@ -199,8 +199,8 @@ export default function ChuanfeiDongFeaturedAiBlogPage() {
               measure how loud the star actually is, and have a physics model
               fast enough to ask what that loudness does to the planet next
               to it. That is what AI for space looks like in Dong&apos;s
-              hands, and it is the through-line explored by {SITE_TITLE}. The
-              goal is not a faster plot. It is a working answer to
+              hands, and it is the through-line that {ORG_NAME} is interested
+              in. The goal is not a faster plot. It is a working answer to
               whether a given world is a barren rock or still a candidate for
               an atmosphere.
             </p>

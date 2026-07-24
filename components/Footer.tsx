@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { skillGroups, ORG_URL, SITE_TITLE } from "@/lib/skills";
+import { skillGroups, ORG_URL, ORG_NAME, SITE_TITLE } from "@/lib/skills";
 
 function formatUtcClock(d: Date): string {
   const pad = (n: number) => String(n).padStart(2, "0");
@@ -72,7 +72,7 @@ export function Footer() {
         </div>
       </footer>
       <div className="footer-bar">
-        <span className="mono">© 2026 · {SITE_TITLE} · Open-source skills</span>
+        <span className="mono">© 2026 · {ORG_NAME} · Open-source skills</span>
         <span className="mono" id="sysclock">
           {clock}
         </span>
