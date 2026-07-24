@@ -5,7 +5,7 @@ import { blogPosts, formatPublished } from "@/lib/blogs";
 export const metadata: Metadata = {
   title: `Blog · ${ORG_NAME}`,
   description:
-    "Featured AI blog index for earth-space-ai.org: profiles of researchers working at the intersection of Earth, space, and AI agents.",
+    "Featured AI blog index for Earth and Space Agent Skills: profiles of researchers working at the intersection of Earth, space, and AI agents.",
   alternates: {
     canonical: "/blog",
   },
@@ -34,9 +34,9 @@ export default function BlogIndexPage() {
           </div>
           <div className="standard-hero-copy">
             <p className="page-sub reveal">
-              Each post is edited by a member of {ORG_NAME} and pairs a working
-              researcher with the methods, code, and evaluation habits they
-              actually rely on.
+              Each post is edited by a member of the {ORG_NAME} community and
+              pairs a working researcher with the methods, code, and evaluation
+              habits they actually rely on.
             </p>
             <div className="page-hero-meta reveal">
               <span>

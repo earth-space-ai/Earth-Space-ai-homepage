@@ -1,4 +1,6 @@
 export type BlogStatus = "published" | "coming-soon";
+export const ZESEN_FEATURED_BLOG_SLUG =
+  "zesen-huang-heliophysics-ai-skills";
 
 export type BlogPost = {
   slug: string;            // URL segment under /blog/
@@ -26,7 +28,7 @@ export const blogPosts: BlogPost[] = [
       "A profile of benchmark design, physics-aware code assistance, scientific skill extraction, and daily AI-assisted research workflows.",
   },
   {
-    slug: "zesen-huang-heliophysics-ai-skills",
+    slug: ZESEN_FEATURED_BLOG_SLUG,
     title: "Zesen Huang, AI agents for heliophysics modeling.",
     subjectName: "Zesen Huang",
     subjectAffiliation: "Postdoc · UCLA",
@@ -66,6 +68,14 @@ blogPosts.sort((a, b) => {
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
+}
+
+export function getRequiredPostBySlug(slug: string): BlogPost {
+  const post = getPostBySlug(slug);
+  if (!post) {
+    throw new Error(`Blog post not found: ${slug}`);
+  }
+  return post;
 }
 
 const MONTHS = [

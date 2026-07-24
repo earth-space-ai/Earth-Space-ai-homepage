@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { OrbitalHero } from "@/components/OrbitalHero";
-import { getPostBySlug } from "@/lib/blogs";
+import {
+  getRequiredPostBySlug,
+  ZESEN_FEATURED_BLOG_SLUG,
+} from "@/lib/blogs";
 import { skillGroups, ORG_URL, ORG_NAME } from "@/lib/skills";
 
 export const metadata: Metadata = {
@@ -10,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const totalSkills = skillGroups.reduce((n, g) => n + g.skills.length, 0);
-const featuredPost = getPostBySlug("zesen-huang-heliophysics-ai-skills")!;
+const featuredPost = getRequiredPostBySlug(ZESEN_FEATURED_BLOG_SLUG);
 const featuredPostHref = `/blog/${featuredPost.slug}`;
 const featuredPostIsPublished = featuredPost.status === "published";
 
@@ -139,7 +142,10 @@ export default function HomePage() {
       <section className="featured-ai-band" id="featured-ai">
         <div className="featured-ai-inner">
           <div className="featured-ai-copy">
-            <span className="mono reveal">Featured AI Blog</span>
+            <span className="mono reveal">
+              Featured AI Blog
+              {!featuredPostIsPublished ? " · Coming soon" : ""}
+            </span>
             <h2 className="featured-ai-title reveal">
               {featuredPost.title}
             </h2>
@@ -168,7 +174,10 @@ export default function HomePage() {
               />
             </div>
             <div className="featured-ai-card-body">
-              <span className="card-eyebrow">Featured AI Blog</span>
+              <span className="card-eyebrow">
+                Featured AI Blog
+                {!featuredPostIsPublished ? " · Coming soon" : ""}
+              </span>
               <h3>{featuredPost.title}</h3>
               <p>{featuredPost.excerpt}</p>
               <span className="featured-ai-card-link">

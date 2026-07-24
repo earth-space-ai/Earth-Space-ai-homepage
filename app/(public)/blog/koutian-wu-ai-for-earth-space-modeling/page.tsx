@@ -207,9 +207,10 @@ export default function KoutianFeaturedAiBlogPage() {
             </p>
 
             <p>
-              On {ORG_NAME}, that stance becomes operational. Wu serves on the
-              executive committee, working on releases, issue triage, docs,
-              partner outreach, funder relations, and research-integrity review.
+              Within {ORG_NAME}, that stance becomes operational. Wu serves on
+              the executive committee, working on releases, issue triage,
+              docs, partner outreach, funder relations, and
+              research-integrity review.
               The same pattern appears across the site: make expert procedural
               knowledge loadable by agents, readable by humans, and reviewable
               by the community.

@@ -4,7 +4,7 @@ import { people, ROLE_SECTIONS, ORG_NAME, type Person, type PersonRole } from "@
 export const metadata: Metadata = {
   title: `Teams · ${ORG_NAME}`,
   description:
-    "People maintaining earth-space-ai.org: scientific committee, executive committee, and scholars.",
+    "People maintaining Earth and Space Agent Skills: scientific committee, executive committee, and scholars.",
 };
 
 function autoInitials(name: string): string {

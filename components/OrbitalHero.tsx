@@ -111,7 +111,7 @@ export function OrbitalHero() {
     <div
       className="hero-orbital"
       ref={containerRef}
-      aria-label="earth-space-ai.org domains, orbital diagram"
+      aria-label="Earth and Space Agent Skills domains, orbital diagram"
     >
       <svg viewBox="0 0 600 600" className="orbital-svg" aria-hidden="true">
         <g className="orb-axes" stroke="currentColor" strokeWidth="0.6" opacity="0.18">
