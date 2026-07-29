@@ -1,7 +1,7 @@
 {
   "manifest_version": "1.0.0",
-  "snapshot_date": "2026-07-28",
-  "verified_at": "2026-07-29T04:27:05Z",
+  "snapshot_date": "2026-07-29",
+  "verified_at": "2026-07-29T09:39:41Z",
   "profile": {
     "id": "primary",
     "role": "Primary",
@@ -10,22 +10,27 @@
   },
   "canonical_data": {
     "logical_name": "data/opportunities.json",
-    "sha256": "a5af1ed92d34f47ffbda372e0d028940b7e5aaa485e4a52486dc34f4388dbc64",
-    "record_count": 32,
+    "sha256": "9a003fb345f956defe7198325774f2934d4c3d9d53c268955701075fd07bf866",
+    "record_count": 48,
     "status_counts": {
-      "open": 22,
-      "upcoming": 2,
-      "closed": 8
+      "open": 38,
+      "upcoming": 1,
+      "closed": 9
     }
   },
   "build_inputs": {
-    "data/schema.json": "11045e1625c0228d88c97269358fe9938277db1278882d3341399afeac2584de",
-    "src/generate.py": "977470a775c624b9090efb4b078a34d239bb454f18c982ffa11a406a231eaeb6",
+    "data/schema.json": "07cd6f1f3c2470c8236518d012f8bf6c0f99a1f33bf09d85e07587a8a6e099aa",
+    "src/generate.py": "987173657c979a0eae79db4e6ce3a48e0ec6655ebe2a05fa55a5af01777e9734",
     "src/site_profiles.json": "31ae8ab8aeb90d43e59619e27cfc491fa0c5839c217ea03ad855c03c81e59881",
-    "src/template.html": "c90db5c2a1da6f88341381ae38268850c596fb7132f5e914fdb7367316ccf6a6"
+    "src/template.html": "5373cd48e67afb277b785379ad8c2586b87f6d6ae02525cd8b2ba99fd08b81ee"
   },
   "outputs": {
-    "index.html": "31bc9944fbef8c014dd176e7fe0aeeb2d325cbc00b1d3ab219fa17f675aa1fb9",
-    "public_opportunities.json": "a5af1ed92d34f47ffbda372e0d028940b7e5aaa485e4a52486dc34f4388dbc64"
+    "index.html": "07261813b3e5afb751054384f505383c746b8f0072867321abe74594a73cd01e",
+    "public_opportunities.json": "9a003fb345f956defe7198325774f2934d4c3d9d53c268955701075fd07bf866",
+    "snapshots/index.json": "a8c76dbda1a65a069d615387b18923c56d9b64f8ab7d46925b853b94f44a81e0",
+    "snapshots/2026-07-29-9a003fb345f9/public_opportunities.json": "9a003fb345f956defe7198325774f2934d4c3d9d53c268955701075fd07bf866",
+    "snapshots/2026-07-29-9a003fb345f9/change_manifest.json": "784ee37a2087925f062a747958472c3967e1012ab93d203b1f1e9e04c22f98c6",
+    "snapshots/2026-07-28-a5af1ed92d34/public_opportunities.json": "a5af1ed92d34f47ffbda372e0d028940b7e5aaa485e4a52486dc34f4388dbc64",
+    "snapshots/2026-07-28-a5af1ed92d34/change_manifest.json": "32fd79e212dd77fe6c5f144f25e8d72fcd7ef577d627c5af4a4fd75311061915"
   }
 }

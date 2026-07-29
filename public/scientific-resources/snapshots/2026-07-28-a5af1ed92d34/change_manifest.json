@@ -1,0 +1,305 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "2026-07-28-a5af1ed92d34",
+  "previous_snapshot_id": null,
+  "comparison_basis": "stable-id-lifecycle",
+  "current_data_sha256": "a5af1ed92d34f47ffbda372e0d028940b7e5aaa485e4a52486dc34f4388dbc64",
+  "previous_data_sha256": null,
+  "counts": {
+    "added": 32,
+    "changed": 0,
+    "retired": 0,
+    "reactivated": 0,
+    "unchanged": 0
+  },
+  "changes": [
+    {
+      "id": "access-accelerate",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "7b918fc47bc748338555f23629d41b85506c2002468eebaa1521774eeb7477ec"
+    },
+    {
+      "id": "access-discover",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "433a8bdf3350ba067dcd5cec0299c722f38274e9cd6424767660a700de4e8c26"
+    },
+    {
+      "id": "access-explore",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "323b082bd83976595b59ab843de57d3adb1d5079a4cf758a8c15858c8298ca77"
+    },
+    {
+      "id": "access-maximize-2026-july",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "221836cd02e7a20512955fa147bd4692fe9c8248a1b3738e77110ab268bdde44"
+    },
+    {
+      "id": "anthropic-ai-for-science-standard",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "4fa89b6f1bc9628dcc11a572c648c8f3d54f04058525816811cd49e7fa8be74a"
+    },
+    {
+      "id": "anthropic-claude-science-2026",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "closed",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "0d825a139ecff27f2ec5e70ce1d42917a26130432f250424612b3d10fedaf04d"
+    },
+    {
+      "id": "anthropic-external-researcher-access",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "8384904d8bb5d1c0c7f935d94c673266a2fb9eb45d1e67199f9ff6e6e2fe7174"
+    },
+    {
+      "id": "anthropic-rare-disease-research-grants-2026",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "75b46734239f6ae87d819c47eeb3db6244638483d5f5376ea7a730f8902259ce"
+    },
+    {
+      "id": "aws-cloud-credit-for-research",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "ecbf2f86e21135b9f11dde38d4a7651d3ffea29b92e776ac68008f9a7ec9351a"
+    },
+    {
+      "id": "doe-alcc-2026-2027",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "closed",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "35fc0f87404ee163ef4e0f3cbc8fb17c97f200e4f6499e5741c2b85da163f25a"
+    },
+    {
+      "id": "doe-alcf-directors-discretionary",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "3debeb0078b48b5d3665ecd101659ab05eebb73df6e3bc2d387e1fc47adb36d1"
+    },
+    {
+      "id": "doe-incite-2027-call",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "closed",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "08d6a72ff3989192a3bcda45a4db1a793ebf6a79f91bd44dfdcd5a70935a62ce"
+    },
+    {
+      "id": "doe-nersc-ercap",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "5910dc988f6332699df81840a3966a0f53ddb063bd2f3ae4fbb5afa6311b3986"
+    },
+    {
+      "id": "doe-olcf-directors-discretionary",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "becff2afa07718b8a2a3a8a070e22d6699b9251f58e57a18480db60dfe05c3de"
+    },
+    {
+      "id": "google-cloud-research-credits-5000",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "d6ef1615b72c9fff4ea8b3126be863470af7ae91c786e0aced14011bf7ffd153"
+    },
+    {
+      "id": "google-gara-eftqc-2026",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "bbd3c124a4ccd75acd09d53a55b51d1c3d7238fa4df2ae0d6f6e1c0ee1f4e357"
+    },
+    {
+      "id": "microsoft-azure-research-credits",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "f040b392a1c62757728e64a33629d0cd00cbaedeff606a129b7a4deb6ba4829a"
+    },
+    {
+      "id": "microsoft-research-fellowship-2026",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "closed",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "690ef89a559eac7919ae3ed3ee5369cad4b8430d1b5de448a236f44bb25246d9"
+    },
+    {
+      "id": "nairr-horizon-deep-partnership",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "upcoming",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "3c16b28b2239950c5a52f243f463f6654c82e966b0fe25446b1b26e3f0fc6d9a"
+    },
+    {
+      "id": "nairr-pilot-research-allocations",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "5a734a8cbd73714e4ce64b76488301eb526e99d3e2ba0fd7f163f5d645705a48"
+    },
+    {
+      "id": "nairr-pilot-startup",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "4747799a296b4eee87fbde21cf28d0949ca057918639e89afcf24997dfddeecb"
+    },
+    {
+      "id": "nasa-hecc-allocations",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "7a6ac0820e9da8c2e12b2e8d58684cac877dcf228012e83e3e06ea15fa6e14dd"
+    },
+    {
+      "id": "nasa-roses-2025-umbrella",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "b15ee02a65f9cb849defe87a7960ef2eef029e1d570813d3812adafea97edce7"
+    },
+    {
+      "id": "nasa-roses-2026",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "upcoming",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "eb16a7a9f22dce66775f35b5ed38b53bee4f6d53be568866088c01345e3fc254"
+    },
+    {
+      "id": "nsf-26-506-pesose",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "ad554af08ba59542cded629cf131325720d9a990b57af03453c9f91712c3054a"
+    },
+    {
+      "id": "nsf-26-512-ai-datasets",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "a16de289fb3e1d4651feb3c60b354ab13ccae39596b0449622bf8465bdaaf5ce"
+    },
+    {
+      "id": "nvidia-academic-grant-program",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "closed",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "d577d9bd93af18314b13eb9ed806e3d580f29510d9618f77ead89d990d24d1a4"
+    },
+    {
+      "id": "openai-researcher-access-program",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "bde200f78172763ef77ca00600b852f153cfab5b98c7028012043c689201dc7e"
+    },
+    {
+      "id": "simons-collaborations-mps-2026",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "open",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "9f1f97682a46247669698c3f52347f8fb64048471d42545e1bcc211fa8220492"
+    },
+    {
+      "id": "simons-scientific-software-research-faculty-2026",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "closed",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "58e4b95df912f9b8ed458ac8afb53bd0ab6f57e055c5221fc8ea191c5d9cc324"
+    },
+    {
+      "id": "sloan-ospo-loi-2023",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "closed",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "ffb0f5db46a3169b5b7b8dee34892590f146291a480aa9153562dc68e5d241fa"
+    },
+    {
+      "id": "tacc-horizon-lrac-2026",
+      "change_type": "added",
+      "previous_status": null,
+      "current_status": "closed",
+      "changed_fields": [],
+      "previous_record_sha256": null,
+      "current_record_sha256": "af12a4920ba3e87fad098cf7ccdbd06103c38845f5b74a22694981aee853dc6d"
+    }
+  ]
+}

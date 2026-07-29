@@ -1,9 +1,9 @@
 {
   "title": "Scientific Resource Tracker",
   "schema_version": "1.0.0",
-  "page_date": "2026-07-29",
+  "page_date": "2026-07-28",
   "page_timezone": "America/Los_Angeles",
-  "verified_at": "2026-07-29T09:39:41Z",
+  "verified_at": "2026-07-29T04:27:05Z",
   "methodology": {
     "evidence_policy": "Only provider, agency, facility, foundation, or provider-linked application pages were accepted as evidence. Aggregators were not used.",
     "endpoint_rule": "Endpoint liveness and program openness are checked separately. A live page or form can belong to a closed or repurposed call; a moved page can point to a valid new route.",
@@ -15,10 +15,10 @@
     }
   },
   "counts": {
-    "total": 48,
-    "open": 38,
-    "upcoming": 1,
-    "closed": 9
+    "total": 32,
+    "open": 22,
+    "upcoming": 2,
+    "closed": 8
   },
   "opportunities": [
     {
@@ -43,14 +43,8 @@
         "https://docs.google.com/forms/d/e/1FAIpQLSfwDGfVg2lHJ0cc0oF_ilEnjvr_r4_paYi7VLlr5cLNXASdvA/viewform?usp=header",
         "https://www.anthropic.com/legal/aup"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:33:47Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "anthropic-claude-science-2026",
@@ -72,14 +66,8 @@
         "https://www.anthropic.com/news/claude-science-ai-workbench",
         "https://docs.google.com/forms/d/e/1FAIpQLSfwDGfVg2lHJ0cc0oF_ilEnjvr_r4_paYi7VLlr5cLNXASdvA/viewform?usp=dialog"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:33:47Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "anthropic-rare-disease-research-grants-2026",
@@ -101,14 +89,8 @@
         "https://www.anthropic.com/news/rare-disease-research-grants",
         "https://docs.google.com/forms/d/e/1FAIpQLSfwDGfVg2lHJ0cc0oF_ilEnjvr_r4_paYi7VLlr5cLNXASdvA/viewform?usp=header"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:33:47Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "anthropic-external-researcher-access",
@@ -130,14 +112,8 @@
         "https://support.claude.com/en/articles/9125743-what-is-the-external-researcher-access-program",
         "https://forms.gle/pZYC8f6qYqSKvRWn9"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:33:47Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "access-explore",
@@ -160,14 +136,8 @@
         "https://allocations.access-ci.org/allocations-policy",
         "https://allocations.access-ci.org/prepare-requests"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:31:19Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "access-discover",
@@ -190,14 +160,8 @@
         "https://allocations.access-ci.org/allocations-policy",
         "https://allocations.access-ci.org/prepare-requests"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:31:19Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "access-accelerate",
@@ -220,14 +184,8 @@
         "https://allocations.access-ci.org/allocations-policy",
         "https://allocations.access-ci.org/prepare-requests"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:31:19Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "access-maximize-2026-july",
@@ -250,14 +208,8 @@
         "https://allocations.access-ci.org/allocations-policy",
         "https://allocations.access-ci.org/prepare-requests"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:31:19Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "tacc-horizon-lrac-2026",
@@ -278,14 +230,8 @@
       "official_source_urls": [
         "https://lccf.tacc.utexas.edu/allocations/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:31:19Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "nairr-horizon-deep-partnership",
@@ -293,28 +239,22 @@
       "provider": "NAIRR Pilot / NSF LCCF at TACC",
       "group": "hpc",
       "group_label": "HPC & GPU allocations",
-      "status": "open",
-      "amount": "Indicative 200,000–1,000,000 GPU-hours + up to several PB working space · 12 months, option to renew",
-      "deadline": "Open live application route; no public close date stated",
+      "status": "upcoming",
+      "amount": "Indicative 200,000–1,000,000 GPU-hours + multi-PB storage · 12 months, renewable",
+      "deadline": "Officially “upcoming” — application window and route not yet announced",
       "next_deadline": null,
-      "deadline_kind": "rolling",
+      "deadline_kind": "tbd",
       "closing_soon": false,
-      "eligibility": "US-based researchers and educators at eligible US-based institutions; large-scale, technically ready AI workflows needing hundreds to thousands of GPUs. Institutional email required. Selected teams collaborate with LCCF and publish results openly.",
-      "endpoint_note": "Official LCCF page states 200,000–1,000,000 GPU-hours, up to several petabytes of working space, and a 12-month allocation with an option to renew; the XRAS request route is live.",
-      "application_url": "https://submit-nairr.xras.org/opportunities/534398/requests/new",
-      "apply_label": "Request allocation",
+      "eligibility": "Large open AI-research projects needing sustained leadership-class partnership; final call rules not yet published.",
+      "endpoint_note": "Official opportunity page live; no application link yet. Distinct from the closed 2026 Horizon LRAC call.",
+      "application_url": null,
+      "apply_label": null,
       "official_source_urls": [
         "https://nairrpilot.org/opportunities/deep-partnerships/lccf",
         "https://nairrpilot.org/opportunities/deep-partnerships"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:31:19Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "nairr-pilot-research-allocations",
@@ -337,14 +277,8 @@
         "https://submit-nairr.xras.org/resources",
         "https://submit-nairr.xras.org/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:31:19Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "nairr-pilot-startup",
@@ -366,14 +300,8 @@
         "https://nairrpilot.org/opportunities/startup-project",
         "https://submit-nairr.xras.org/opportunities/534233/requests/new"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:31:19Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "nasa-hecc-allocations",
@@ -396,14 +324,8 @@
         "https://www.nas.nasa.gov/hecc/accounts/allocations.html",
         "https://request.hec.nasa.gov/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:32:04Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "nasa-roses-2025-umbrella",
@@ -427,14 +349,8 @@
         "https://solicitation.nasaprs.com/ROSES2025table2",
         "https://solicitation.nasaprs.com/ROSES2025table3"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:36:28Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "nasa-roses-2026",
@@ -457,14 +373,8 @@
         "https://science.nasa.gov/researchers/sara/grant-solicitations/",
         "https://science.nasa.gov/researchers/solicitations/roses-blogs/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:36:28Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "doe-alcf-directors-discretionary",
@@ -486,14 +396,8 @@
         "https://www.alcf.anl.gov/science/directors-discretionary-allocation-program",
         "https://my.alcf.anl.gov/accounts/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:32:04Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "doe-olcf-directors-discretionary",
@@ -516,14 +420,8 @@
         "https://my.olcf.ornl.gov/project-application-new",
         "https://science.osti.gov/ascr/Facilities/Accessing-ASCR-Facilities/ALCC/FAQ-Detail"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:32:04Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "doe-nersc-ercap",
@@ -545,14 +443,8 @@
         "https://docs.nersc.gov/allocations/ercap_form/",
         "https://ercap.nersc.gov/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:32:04Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "doe-incite-2027-call",
@@ -573,14 +465,8 @@
       "official_source_urls": [
         "https://doeleadershipcomputing.org/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:32:04Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "doe-alcc-2026-2027",
@@ -602,14 +488,8 @@
         "https://science.osti.gov/ascr/Facilities/Accessing-ASCR-Facilities/ALCC/Call-for-Proposals",
         "https://science.osti.gov/ascr/Facilities/Accessing-ASCR-Facilities/ALCC/FAQ-Detail"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:32:04Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "google-cloud-research-credits-5000",
@@ -618,26 +498,20 @@
       "group": "credits",
       "group_label": "API & cloud research credits",
       "status": "open",
-      "amount": "PhD students: up to $1,000; faculty and postdoctoral researchers: award varies / no fixed public amount",
+      "amount": "$5,000 in Google Cloud research credits",
       "deadline": "No deadline stated on the official page",
       "next_deadline": null,
       "deadline_kind": "rolling",
       "closing_soon": false,
-      "eligibility": "PhD students may request up to $1,000 in Google Cloud credits; faculty and postdoctoral researcher awards vary and have no fixed public amount on the landing page.",
-      "endpoint_note": "Official landing page exposes a live Apply CTA; stable ID preserved although the historical suffix is no longer accurate.",
+      "eligibility": "Open to researchers (used in 70+ countries per Google); detailed applicant rules are on the application form rather than the landing page.",
+      "endpoint_note": "Official landing page exposes a live Apply CTA; the form itself is embedded.",
       "application_url": "https://cloud.google.com/edu/researchers",
       "apply_label": "Apply on official page",
       "official_source_urls": [
         "https://cloud.google.com/edu/researchers"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:36:11Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "google-gara-eftqc-2026",
@@ -660,14 +534,8 @@
         "https://research.google/programs-and-events/early-fault-tolerant-quantum-algorithms-applications/",
         "https://research.google/programs-and-events/google-academic-research-awards/terms-for-google-academic-research-awards/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:33:02Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "aws-cloud-credit-for-research",
@@ -690,14 +558,8 @@
         "https://pages.awscloud.com/aws-cloud-credit-for-research.html",
         "https://aws.amazon.com/awscredits/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:33:02Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "microsoft-azure-research-credits",
@@ -718,14 +580,8 @@
       "official_source_urls": [
         "https://www.microsoft.com/en-us/azure-academic-research/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:33:02Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "nvidia-academic-grant-program",
@@ -746,14 +602,8 @@
       "official_source_urls": [
         "https://www.nvidia.com/en-us/industries/higher-education-research/academic-grant-program/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:33:02Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "openai-researcher-access-program",
@@ -776,14 +626,8 @@
         "https://help.openai.com/en/articles/10139500-researcher-access-program-faq",
         "https://openai.smapply.org/prog/openai_researcher_access_program/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:33:02Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "nsf-26-512-ai-datasets",
@@ -806,14 +650,8 @@
         "https://www.nsf.gov/funding/opportunities/ai-datasets-unlocking-dataset-value-ai-enabled-scientific-discovery",
         "https://www.nsf.gov/awards/terms-conditions"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:35:53Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "nsf-26-506-pesose",
@@ -836,14 +674,8 @@
         "https://www.nsf.gov/funding/opportunities/pesose-pathways-enable-secure-open-source-ecosystems",
         "https://www.nsf.gov/awards/terms-conditions"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:35:53Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "simons-collaborations-mps-2026",
@@ -866,14 +698,8 @@
         "https://www.simonsfoundation.org/funding-opportunities/policies-and-procedures/",
         "https://sam.simonsfoundation.org/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:35:55Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "microsoft-research-fellowship-2026",
@@ -896,14 +722,8 @@
         "https://www.microsoft.com/en-us/research/academic-program/microsoft-research-fellowship/how-to-apply/",
         "https://www.microsoft.com/en-us/research/academic-program/microsoft-research-fellowship/research-challenges/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:36:27Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "simons-scientific-software-research-faculty-2026",
@@ -925,14 +745,8 @@
         "https://www.simonsfoundation.org/grant/scientific-software-research-faculty-award/",
         "https://www.simonsfoundation.org/funding-opportunities/policies-and-procedures/"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:36:11Z",
+      "verified_date": "2026-07-28"
     },
     {
       "id": "sloan-ospo-loi-2023",
@@ -953,462 +767,8 @@
       "official_source_urls": [
         "https://sloan.org/programs/digital-technology/ospo-loi"
       ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-28",
-      "last_verified": "2026-07-29",
-      "retired_at": "2026-07-29",
-      "retirement_reason": "Official Sloan OSPO LOI page states this was a one-time 2023 call with no future calls planned.",
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "google-tpu-research-cloud",
-      "program": "TPU Research Cloud",
-      "provider": "Google Research",
-      "group": "credits",
-      "group_label": "API & cloud research credits",
-      "status": "open",
-      "amount": "Free access to a pool/cluster of more than 1,000 Cloud TPU devices",
-      "deadline": "Open rolling interest route; no public deadline",
-      "next_deadline": null,
-      "deadline_kind": "rolling",
-      "closing_soon": false,
-      "eligibility": "ML researchers worldwide; accepted users share results through publications, open source, or blogs and provide feedback.",
-      "endpoint_note": "Official TPU Research Cloud page describes a live interest/request route for research access.",
-      "application_url": "https://sites.research.google/trc/about/",
-      "apply_label": "Request TPU access",
-      "official_source_urls": [
-        "https://sites.research.google/trc/about/"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "google-gara-quantum-computing-security-2026",
-      "program": "Google Academic Research Awards — Quantum Computing Security",
-      "provider": "Google Research",
-      "group": "grants",
-      "group_label": "AI-for-science & open-science grants",
-      "status": "open",
-      "amount": "Up to $100,000 unrestricted gift; exceptional larger requests may be considered",
-      "deadline": "August 7, 2026, 11:59:59 p.m. AoE",
-      "next_deadline": "2026-08-07",
-      "deadline_kind": "fixed",
-      "closing_soon": true,
-      "eligibility": "Professors at universities or degree-granting research institutions; maximum two PIs; computing/technology proposal.",
-      "endpoint_note": "Official 2026 Google Academic Research Awards topic page is live; distinct from the baseline eFTQC GARA topic.",
-      "application_url": "https://research.google/programs-and-events/quantum-computing-security/",
-      "apply_label": "Apply on official page",
-      "official_source_urls": [
-        "https://research.google/programs-and-events/quantum-computing-security/"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "oracle-for-research-project-award",
-      "program": "Oracle for Research Project Award",
-      "provider": "Oracle for Research",
-      "group": "credits",
-      "group_label": "API & cloud research credits",
-      "status": "open",
-      "amount": "Variable Oracle Cloud credits, computational resources, technical consultation, and dissemination assistance",
-      "deadline": "Open; no public deadline",
-      "next_deadline": null,
-      "deadline_kind": "rolling",
-      "closing_soon": false,
-      "eligibility": "Research PI/institution; project impact, Oracle Cloud fit, and PI/institution experience considered; regional restrictions apply and unavailable in China.",
-      "endpoint_note": "Official Oracle for Research award page exposes a current project-award route.",
-      "application_url": "https://go.oracle.com/research-project-award",
-      "apply_label": "Apply on official page",
-      "official_source_urls": [
-        "https://go.oracle.com/research-project-award"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "lambda-research-grant",
-      "program": "Lambda Research Grant",
-      "provider": "Lambda",
-      "group": "credits",
-      "group_label": "API & cloud research credits",
-      "status": "open",
-      "amount": "Research compute grant; public amount not stated",
-      "deadline": "Open live grant form; no public deadline",
-      "next_deadline": null,
-      "deadline_kind": "rolling",
-      "closing_soon": false,
-      "eligibility": "Public page exposes an active grant application but does not state award size or detailed eligibility.",
-      "endpoint_note": "Official Lambda Research page has a live grant application; no unsupported dollar amount is published.",
-      "application_url": "https://lambda.ai/research",
-      "apply_label": "Apply for grant",
-      "official_source_urls": [
-        "https://lambda.ai/research"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "together-ai-research-credits",
-      "program": "Together AI Research Credits Program Request",
-      "provider": "Together AI",
-      "group": "credits",
-      "group_label": "API & cloud research credits",
-      "status": "open",
-      "amount": "A few hundred dollars in research credits",
-      "deadline": "Live limited/invite-only request route; no public deadline",
-      "next_deadline": null,
-      "deadline_kind": "rolling",
-      "closing_soon": false,
-      "eligibility": "Students doing research outside formal classes may request support; page says anyone with a research idea may request support, but availability is limited.",
-      "endpoint_note": "Conservatively represented as open only because the schema lacks a limited/request-route status; public text should not imply broad open availability.",
-      "application_url": "https://www.together.ai/research-credits-program-request",
-      "apply_label": "Request research credits",
-      "official_source_urls": [
-        "https://www.together.ai/research-credits-program-request"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "schmidt-multi-agent-ai-safety-2026",
-      "program": "Scaling AI Safety for a Multi-Agent World",
-      "provider": "Schmidt Sciences",
-      "group": "grants",
-      "group_label": "AI-for-science & open-science grants",
-      "status": "open",
-      "amount": "Tier 1 up to $300,000 / 1–2 years; Tier 2 $300,000–$1,000,000 / 1–2 years",
-      "deadline": "August 8, 2026, 11:59 p.m. AoE",
-      "next_deadline": "2026-08-08",
-      "deadline_kind": "fixed",
-      "closing_soon": true,
-      "eligibility": "Global individual researchers, teams, universities, labs, institutes, and nonprofit research organizations; cross-border and multi-institution work allowed; Schmidt-funded indirects capped at 10%; technical system-level multi-principal multi-agent safety only.",
-      "endpoint_note": "Official Schmidt Sciences application portal is live for the named 2026 call.",
-      "application_url": "https://schmidtsciences.smapply.io/prog/scaling_ai_safety_for_a_multi_agent_world/",
-      "apply_label": "Apply through Schmidt portal",
-      "official_source_urls": [
-        "https://schmidtsciences.smapply.io/prog/scaling_ai_safety_for_a_multi_agent_world/"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "simons-targeted-grants-mps",
-      "program": "Targeted Grants in Mathematics and Physical Sciences",
-      "provider": "Simons Foundation",
-      "group": "grants",
-      "group_label": "AI-for-science & open-science grants",
-      "status": "open",
-      "amount": "Flexible funding for up to five years; supports personnel, travel, visitors, meetings, equipment, and computation",
-      "deadline": "Open rolling LOI",
-      "next_deadline": null,
-      "deadline_kind": "rolling",
-      "closing_soon": false,
-      "eligibility": "Tenured/tenure-track or equivalent PI/co-I at an established US or foreign educational institution or research center; no citizenship restriction; no China/HK or for-profit funding.",
-      "endpoint_note": "Official Simons Foundation page describes an open rolling LOI route.",
-      "application_url": "https://www.simonsfoundation.org/grant/targeted-grants-in-mps/",
-      "apply_label": "Submit LOI",
-      "official_source_urls": [
-        "https://www.simonsfoundation.org/grant/targeted-grants-in-mps/"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "hsf-51-pegasi-b-fellowship-2026",
-      "program": "51 Pegasi b Fellowship 2026",
-      "provider": "Heising-Simons Foundation",
-      "group": "grants",
-      "group_label": "AI-for-science & open-science grants",
-      "status": "open",
-      "amount": "Up to $492,000 over three years, optional fourth year, flexible research support, and annual summit",
-      "deadline": "October 1, 2026, 2:00 p.m. Pacific",
-      "next_deadline": "2026-10-01",
-      "deadline_kind": "fixed",
-      "closing_soon": false,
-      "eligibility": "Postdoctoral planetary-astronomy or closely related scientist; host and degree-timing rules are in official application guidelines.",
-      "endpoint_note": "Official Heising-Simons Foundation fellowship page is live for the 2026 cycle.",
-      "application_url": "https://www.hsfoundation.org/programs/science/51-pegasi-b-fellowship/",
-      "apply_label": "Apply on official page",
-      "official_source_urls": [
-        "https://www.hsfoundation.org/programs/science/51-pegasi-b-fellowship/"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "hsf-astronova-fellowship-2026",
-      "program": "Astronomical Innovation / AstroNova Fellowship 2026",
-      "provider": "Heising-Simons Foundation",
-      "group": "grants",
-      "group_label": "AI-for-science & open-science grants",
-      "status": "open",
-      "amount": "Four-year salary, benefits, discretionary support, optional fifth year; up to $150,000 Innovation Grant from year two",
-      "deadline": "October 2, 2026, 2:00 p.m. Pacific",
-      "next_deadline": "2026-10-02",
-      "deadline_kind": "fixed",
-      "closing_soon": false,
-      "eligibility": "Postdoctoral astronomical instrumentation at Carnegie Science, Keck, Arizona, UC Berkeley, UC San Diego, or UC Santa Cruz.",
-      "endpoint_note": "Official Heising-Simons Foundation AstroNova fellowship page is live for the 2026 cycle.",
-      "application_url": "https://www.hsfoundation.org/programs/science/astronomical-innovation-astronova-fellowship/",
-      "apply_label": "Apply on official page",
-      "official_source_urls": [
-        "https://www.hsfoundation.org/programs/science/astronomical-innovation-astronova-fellowship/"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "eurohpc-regular-access-2026",
-      "program": "EuroHPC JU Regular Access Mode",
-      "provider": "EuroHPC Joint Undertaking",
-      "group": "hpc",
-      "group_label": "HPC & GPU allocations",
-      "status": "open",
-      "amount": "One-year large compute/storage/support allocations on EuroHPC petascale, pre-exascale, and exascale systems",
-      "deadline": "Next cut-off September 4, 2026, 10:00 CEST",
-      "next_deadline": "2026-09-04",
-      "deadline_kind": "fixed",
-      "closing_soon": false,
-      "eligibility": "Scientific, industry, and public-administration tracks; eligible-entity and geography rules are in the full call. Do not assume direct eligibility without an eligible European lead.",
-      "endpoint_note": "Official EuroHPC JU Regular Access call page lists current cut-offs.",
-      "application_url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-call-proposals-regular-access-mode_en",
-      "apply_label": "Apply through EuroHPC route",
-      "official_source_urls": [
-        "https://www.eurohpc-ju.europa.eu/eurohpc-ju-call-proposals-regular-access-mode_en"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "eurohpc-ai-for-science-access-2026",
-      "program": "EuroHPC JU AI for Science and Collaborative EU Projects Access",
-      "provider": "EuroHPC Joint Undertaking",
-      "group": "hpc",
-      "group_label": "HPC & GPU allocations",
-      "status": "open",
-      "amount": "Six-month AI-for-science allocations; about one month to access after cut-off",
-      "deadline": "Next cut-offs August 31, October 30, and December 11, 2026, 10:00 CET",
-      "next_deadline": "2026-08-31",
-      "deadline_kind": "fixed",
-      "closing_soon": false,
-      "eligibility": "Scientific users, public sector, and EU-program R&I industrial users; detailed entity/geography rules are in the full call; some partitions unavailable under high demand.",
-      "endpoint_note": "Official EuroHPC JU AI-for-science call page lists current 2026 cut-offs.",
-      "application_url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-call-proposals-ai-science-and-collaborative-eu-projects_en",
-      "apply_label": "Apply through EuroHPC route",
-      "official_source_urls": [
-        "https://www.eurohpc-ju.europa.eu/eurohpc-ju-call-proposals-ai-science-and-collaborative-eu-projects_en"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "eurohpc-development-access-2026",
-      "program": "EuroHPC JU Development Access Mode",
-      "provider": "EuroHPC Joint Undertaking",
-      "group": "hpc",
-      "group_label": "HPC & GPU allocations",
-      "status": "open",
-      "amount": "Small node-hour allocations for code, algorithm, and AI-method development and optimization; one-year allocation; 2–3 weeks to access",
-      "deadline": "Monthly cut-offs through December 1, 2026; next August 1, 2026, 10:00 CET",
-      "next_deadline": "2026-08-01",
-      "deadline_kind": "fixed",
-      "closing_soon": true,
-      "eligibility": "Academia, industry, and public-private research initiatives; first-come-first-served monthly quota; detailed entity/geography rules in call documents.",
-      "endpoint_note": "Official EuroHPC JU Development Access call page lists current monthly cut-offs.",
-      "application_url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-call-proposals-development-access_en",
-      "apply_label": "Apply through EuroHPC route",
-      "official_source_urls": [
-        "https://www.eurohpc-ju.europa.eu/eurohpc-ju-call-proposals-development-access_en"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "jwst-cycle-6",
-      "program": "JWST Cycle 6 Call for Proposals",
-      "provider": "Space Telescope Science Institute / NASA",
-      "group": "grants",
-      "group_label": "AI-for-science & open-science grants",
-      "status": "open",
-      "amount": "Up to 7,700 hours across General Observer, Survey, and Archival Research programs",
-      "deadline": "September 30, 2026, 8:00 p.m. U.S. Eastern",
-      "next_deadline": "2026-09-30",
-      "deadline_kind": "fixed",
-      "closing_soon": false,
-      "eligibility": "Open to domestic and foreign organizations of all categories; observing cycle runs July 1, 2027 to June 30, 2028.",
-      "endpoint_note": "Official JWST Cycle 6 call page is live.",
-      "application_url": "https://jwst-docs.stsci.edu/jwst-opportunities-and-policies/jwst-call-for-proposals-for-cycle-6",
-      "apply_label": "Submit proposal",
-      "official_source_urls": [
-        "https://jwst-docs.stsci.edu/jwst-opportunities-and-policies/jwst-call-for-proposals-for-cycle-6"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "nrao-2027a",
-      "program": "NRAO 2027A Call for Proposals",
-      "provider": "National Radio Astronomy Observatory",
-      "group": "hpc",
-      "group_label": "HPC & GPU allocations",
-      "status": "open",
-      "amount": "VLA, GBT, VLBA/HSA/GMVA observing time; about 3,300 VLA, 2,000 GBT, and 965 VLBA hours plus joint routes",
-      "deadline": "July 29, 2026, 17:00 EDT / 21:00 UTC",
-      "next_deadline": "2026-07-29",
-      "deadline_kind": "fixed",
-      "closing_soon": true,
-      "eligibility": "Qualified scientists worldwide regardless of institution or nationality; extremely near-term.",
-      "endpoint_note": "Official NRAO 2027A call is still before its 2026-07-29 21:00 UTC deadline for this proposed snapshot.",
-      "application_url": "https://science.nrao.edu/observing/call-for-proposals/2027a",
-      "apply_label": "Submit proposal",
-      "official_source_urls": [
-        "https://science.nrao.edu/observing/call-for-proposals/2027a"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "nasa-openscapes-earthdata",
-      "program": "NASA Openscapes for Earthdata",
-      "provider": "NASA Earthdata",
-      "group": "hpc",
-      "group_label": "HPC & GPU allocations",
-      "status": "open",
-      "amount": "Reproducible/cloud workflow mentorship community, tutorials, cloud training, earthaccess, and Earthdata Cloud Cookbook",
-      "deadline": "Ongoing noncompetitive resource; no public intake deadline on landing page",
-      "next_deadline": null,
-      "deadline_kind": "rolling",
-      "closing_soon": false,
-      "eligibility": "Researchers using NASA Earthdata; collaboration spans government, academia, nonprofits, and small businesses; landing page does not expose a competitive application.",
-      "endpoint_note": "Official NASA Earthdata page describes ongoing Openscapes resources and training; no competitive intake is implied.",
-      "application_url": null,
-      "apply_label": null,
-      "official_source_urls": [
-        "https://www.earthdata.nasa.gov/data/projects/openscapes"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
-    },
-    {
-      "id": "hsf-science-events-gatherings-2026",
-      "program": "Science Events and Gatherings 2026 Open Call",
-      "provider": "Heising-Simons Foundation",
-      "group": "grants",
-      "group_label": "AI-for-science & open-science grants",
-      "status": "closed",
-      "amount": "2026 call offered $20,000–$80,000 per grant for meetings, workshops, conferences, summer schools, and research-collaboration gatherings",
-      "deadline": "Closed July 10, 2026, 2:00 p.m. Pacific",
-      "next_deadline": null,
-      "deadline_kind": "closed",
-      "closing_soon": false,
-      "eligibility": "The 2026 call covered astronomy, planetary science, cosmology, fundamental physics, and climate science events; Science program describes this as an annual open call.",
-      "endpoint_note": "Closed annual monitor retained for successor-cycle monitoring; do not show as open or upcoming.",
-      "application_url": null,
-      "apply_label": null,
-      "official_source_urls": [
-        "https://www.hsfoundation.org/news-stories/funding-opportunity-new-open-call-for-science-events-and-gatherings/"
-      ],
-      "verified_at": "2026-07-29T09:39:41Z",
-      "verified_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "last_verified": "2026-07-29",
-      "retired_at": null,
-      "retirement_reason": null,
-      "superseded_by": null,
-      "reactivated_at": null
+      "verified_at": "2026-07-29T00:35:55Z",
+      "verified_date": "2026-07-28"
     }
   ]
 }

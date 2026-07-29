@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "title": "Scientific Resource Tracker snapshot index",
+  "current_snapshot_id": "2026-07-29-9a003fb345f9",
+  "generated_from": {
+    "source_repository": "https://github.com/earth-space-ai/scientific-resources",
+    "source_commit": "28e802bf4df2a7653a790e0546e99a838c850dab",
+    "build_spec_version": "1.0.0"
+  },
+  "snapshots": [
+    {
+      "snapshot_id": "2026-07-29-9a003fb345f9",
+      "page_date": "2026-07-29",
+      "page_timezone": "America/Los_Angeles",
+      "verified_at": "2026-07-29T09:39:41Z",
+      "canonical_data_sha256": "9a003fb345f956defe7198325774f2934d4c3d9d53c268955701075fd07bf866",
+      "record_count": 48,
+      "status_counts": {
+        "open": 38,
+        "upcoming": 1,
+        "closed": 9
+      },
+      "stable_id_sha256": "244909ef54ce816677ecb80b4d6bcee3281dfae5d94eed0283eb7a46097cc7cd",
+      "data_url": "/scientific-resources/snapshots/2026-07-29-9a003fb345f9/public_opportunities.json",
+      "change_manifest_url": "/scientific-resources/snapshots/2026-07-29-9a003fb345f9/change_manifest.json",
+      "source": {
+        "kind": "source-git",
+        "commit": "28e802bf4df2a7653a790e0546e99a838c850dab",
+        "path": "data/opportunities.json"
+      }
+    },
+    {
+      "snapshot_id": "2026-07-28-a5af1ed92d34",
+      "page_date": "2026-07-28",
+      "page_timezone": "America/Los_Angeles",
+      "verified_at": "2026-07-29T04:27:05Z",
+      "canonical_data_sha256": "a5af1ed92d34f47ffbda372e0d028940b7e5aaa485e4a52486dc34f4388dbc64",
+      "record_count": 32,
+      "status_counts": {
+        "open": 22,
+        "upcoming": 2,
+        "closed": 8
+      },
+      "stable_id_sha256": "bda4884156d21fcc1de04cab35662b792e97308fbb02f69b3915ef8080a00031",
+      "data_url": "/scientific-resources/snapshots/2026-07-28-a5af1ed92d34/public_opportunities.json",
+      "change_manifest_url": "/scientific-resources/snapshots/2026-07-28-a5af1ed92d34/change_manifest.json",
+      "source": {
+        "kind": "source-git",
+        "commit": "533ba99a6567b1a924b7915c55e545fbb0e543a0",
+        "path": "data/opportunities.json"
+      }
+    }
+  ]
+}
