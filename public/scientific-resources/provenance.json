@@ -1,0 +1,31 @@
+{
+  "manifest_version": "1.0.0",
+  "snapshot_date": "2026-07-28",
+  "verified_at": "2026-07-29T04:27:05Z",
+  "profile": {
+    "id": "primary",
+    "role": "Primary",
+    "canonical_url": "https://earth-space-ai.org/scientific-resources",
+    "alternate_url": "https://huangzesen.github.io/scientific-resources/"
+  },
+  "canonical_data": {
+    "logical_name": "data/opportunities.json",
+    "sha256": "a5af1ed92d34f47ffbda372e0d028940b7e5aaa485e4a52486dc34f4388dbc64",
+    "record_count": 32,
+    "status_counts": {
+      "open": 22,
+      "upcoming": 2,
+      "closed": 8
+    }
+  },
+  "build_inputs": {
+    "data/schema.json": "11045e1625c0228d88c97269358fe9938277db1278882d3341399afeac2584de",
+    "src/generate.py": "48b4f60ecb7a27cdcaf56ed98e1524345b3ac5d159b02dd45517ad4fb54aa15b",
+    "src/site_profiles.json": "1ae46c0d834897a8790bbf7cca7745170398cb3853f21bbda383059a6f06e98b",
+    "src/template.html": "600176427238ff7223d9dc10ffb9648ef86e185718e2cdd5844cbcc646ce541c"
+  },
+  "outputs": {
+    "index.html": "58bc97eb74351facdee5bd0ce158b46064c3c917850fa2ff097d9c1e191fb08b",
+    "public_opportunities.json": "a5af1ed92d34f47ffbda372e0d028940b7e5aaa485e4a52486dc34f4388dbc64"
+  }
+}

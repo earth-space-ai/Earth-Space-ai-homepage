@@ -12,6 +12,14 @@ const nextConfig = {
       { protocol: "https", hostname: "*.supabase.co" },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/scientific-resources",
+        destination: "/scientific-resources/index.html",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
