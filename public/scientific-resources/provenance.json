@@ -1,7 +1,7 @@
 {
   "manifest_version": "1.0.0",
   "snapshot_date": "2026-07-29",
-  "verified_at": "2026-07-29T09:39:41Z",
+  "verified_at": "2026-07-29T22:34:02Z",
   "profile": {
     "id": "primary",
     "role": "Primary",
@@ -10,12 +10,12 @@
   },
   "canonical_data": {
     "logical_name": "data/opportunities.json",
-    "sha256": "9a003fb345f956defe7198325774f2934d4c3d9d53c268955701075fd07bf866",
+    "sha256": "cfe70c851e31e17e2a9a0a78b9c093ad809928f9a4787da9fe2d2e2be015aa6b",
     "record_count": 48,
     "status_counts": {
-      "open": 38,
+      "open": 37,
       "upcoming": 1,
-      "closed": 9
+      "closed": 10
     }
   },
   "build_inputs": {
@@ -25,9 +25,11 @@
     "src/template.html": "5373cd48e67afb277b785379ad8c2586b87f6d6ae02525cd8b2ba99fd08b81ee"
   },
   "outputs": {
-    "index.html": "07261813b3e5afb751054384f505383c746b8f0072867321abe74594a73cd01e",
-    "public_opportunities.json": "9a003fb345f956defe7198325774f2934d4c3d9d53c268955701075fd07bf866",
-    "snapshots/index.json": "a8c76dbda1a65a069d615387b18923c56d9b64f8ab7d46925b853b94f44a81e0",
+    "index.html": "cae9434b2305138a0abe96352a1850d995dcd6edb634d8d45f074e81b02aca56",
+    "public_opportunities.json": "cfe70c851e31e17e2a9a0a78b9c093ad809928f9a4787da9fe2d2e2be015aa6b",
+    "snapshots/index.json": "3cf5e930b5dc1fff8755cea055eb9a3de8258ffb01b87a92046b33d1e989353e",
+    "snapshots/2026-07-29-cfe70c851e31/public_opportunities.json": "cfe70c851e31e17e2a9a0a78b9c093ad809928f9a4787da9fe2d2e2be015aa6b",
+    "snapshots/2026-07-29-cfe70c851e31/change_manifest.json": "ed3cae7feebb2d7e9bd595a9ea9b3bc4243e8e500faa6cd938bd6e9ed1e5cc76",
     "snapshots/2026-07-29-9a003fb345f9/public_opportunities.json": "9a003fb345f956defe7198325774f2934d4c3d9d53c268955701075fd07bf866",
     "snapshots/2026-07-29-9a003fb345f9/change_manifest.json": "784ee37a2087925f062a747958472c3967e1012ab93d203b1f1e9e04c22f98c6",
     "snapshots/2026-07-28-a5af1ed92d34/public_opportunities.json": "a5af1ed92d34f47ffbda372e0d028940b7e5aaa485e4a52486dc34f4388dbc64",
