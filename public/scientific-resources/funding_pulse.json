@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "2026-07-30-75e1e5c54957",
+  "as_of_date": "2026-07-30",
+  "scope": {
+    "dataset": "officially quantified visible resources in this maintained database snapshot",
+    "exhaustiveness_warning": "This is not all funding in existence and not an internet-wide estimate.",
+    "current_record_scope": "Only open and upcoming records contribute to current resource buckets.",
+    "us_sponsor_scope": "U.S.-only aggregates include records with landscape.sponsor_country=US only."
+  },
+  "record_totals": {
+    "total": 70,
+    "open": 50,
+    "upcoming": 3,
+    "closed": 17,
+    "current": 53
+  },
+  "view_record_counts": {
+    "curated": {
+      "total": 54,
+      "open": 38,
+      "upcoming": 1,
+      "closed": 15
+    },
+    "all": {
+      "total": 70,
+      "open": 50,
+      "upcoming": 3,
+      "closed": 17
+    }
+  },
+  "snapshot_delta": {
+    "counts": {
+      "added": 16,
+      "changed": 54,
+      "retired": 0,
+      "reactivated": 0,
+      "unchanged": 0,
+      "relevance_changed": 54,
+      "funding_quantification_changed": 54
+    },
+    "change_manifest_url": "/scientific-resources/snapshots/2026-07-30-75e1e5c54957/change_manifest.json",
+    "baseline_available": false,
+    "baseline_reason": "previous_snapshot_has_no_funding_pulse"
+  },
+  "provenance": {
+    "canonical_data_sha256": "75e1e5c549574cd2593e9e55b9de89b9145a797a91c8ce7badd1f9f56aea88c6",
+    "change_manifest_sha256": "d388eaf6ed93f27e81ca6b72300048fc158d14903fdc11c4823486e8a31ff1a2",
+    "change_manifest_path": "data/history/snapshots/2026-07-30-75e1e5c54957/change_manifest.json",
+    "change_manifest_url": "/scientific-resources/snapshots/2026-07-30-75e1e5c54957/change_manifest.json",
+    "source_git": {
+      "source_repository": "https://github.com/earth-space-ai/scientific-resources",
+      "commit": "cdba70e30101914386650c166cd63e8dd4ad7c2f",
+      "path": "data/opportunities.json"
+    }
+  },
+  "coverage": {
+    "records_total": 70,
+    "current_records": 53,
+    "archived_records": 17,
+    "quantified_records": 9,
+    "partially_quantified_records": 1,
+    "unquantified_records": 60,
+    "individualized_records": 0,
+    "quantified_current_records": 7,
+    "partially_quantified_current_records": 1,
+    "unquantified_current_records": 45,
+    "individualized_current_records": 0,
+    "unknown_coverage_note": "Unknown and individualized opportunities remain verified records but are excluded from quantified totals."
+  },
+  "program_pools": [
+    {
+      "bucket_id": "cash-program-pool-currency-usd-cycle",
+      "label": "cash|program_pool|currency|USD|cycle",
+      "scope": "us_sponsor",
+      "accounting_bucket": "program_pool",
+      "resource_kind": "cash",
+      "unit": {
+        "kind": "currency",
+        "code": "USD",
+        "native_label": "USD"
+      },
+      "period": {
+        "kind": "cycle",
+        "display": "2026 funding round"
+      },
+      "amount": {
+        "minimum_sum": 90000.0,
+        "maximum_sum": 90000.0
+      },
+      "records": [
+        {
+          "id": "python-software-foundation-grants-2026-event-round",
+          "measure_id": "python-software-foundation-grants-2026-event-round:program-pool-usd"
+        }
+      ],
+      "source_urls": [
+        "https://www.python.org/psf/grants/"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    }
+  ],
+  "per_award_ranges": [
+    {
+      "bucket_id": "cash-per-award-currency-usd-project-duration",
+      "label": "cash|per_award|currency|USD|project_duration",
+      "scope": "us_sponsor",
+      "accounting_bucket": "per_award",
+      "resource_kind": "cash",
+      "unit": {
+        "kind": "currency",
+        "code": "USD",
+        "native_label": "USD"
+      },
+      "period": {
+        "kind": "project_duration",
+        "display": "up to 24 months"
+      },
+      "amount": {
+        "minimum_sum": 10000.0,
+        "maximum_sum": 900000.0
+      },
+      "records": [
+        {
+          "id": "otf-internet-freedom-fund-rolling",
+          "measure_id": "otf-internet-freedom-fund-rolling:per-project-usd"
+        }
+      ],
+      "source_urls": [
+        "https://www.opentech.fund/funds/internet-freedom-fund/"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    },
+    {
+      "bucket_id": "provider-python-software-foundation-resource-cash-basis-conference-cap-unit-usd",
+      "label": "provider:Python Software Foundation|resource:cash|basis:conference-cap|unit:USD",
+      "scope": "us_sponsor",
+      "accounting_bucket": "per_award",
+      "resource_kind": "cash",
+      "unit": {
+        "kind": "currency",
+        "code": "USD",
+        "native_label": "USD"
+      },
+      "period": {
+        "kind": "one_time",
+        "display": "per conference"
+      },
+      "amount": {
+        "minimum_sum": 0.0,
+        "maximum_sum": 2000.0
+      },
+      "records": [
+        {
+          "id": "python-software-foundation-grants-2026-event-round",
+          "measure_id": "python-software-foundation-grants-2026-event-round:conference-cap-usd"
+        }
+      ],
+      "source_urls": [
+        "https://www.python.org/psf/grants/"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    },
+    {
+      "bucket_id": "provider-python-software-foundation-resource-cash-basis-workshop-cap-unit-usd",
+      "label": "provider:Python Software Foundation|resource:cash|basis:workshop-cap|unit:USD",
+      "scope": "us_sponsor",
+      "accounting_bucket": "per_award",
+      "resource_kind": "cash",
+      "unit": {
+        "kind": "currency",
+        "code": "USD",
+        "native_label": "USD"
+      },
+      "period": {
+        "kind": "one_time",
+        "display": "per workshop"
+      },
+      "amount": {
+        "minimum_sum": 0.0,
+        "maximum_sum": 1500.0
+      },
+      "records": [
+        {
+          "id": "python-software-foundation-grants-2026-event-round",
+          "measure_id": "python-software-foundation-grants-2026-event-round:workshop-cap-usd"
+        }
+      ],
+      "source_urls": [
+        "https://www.python.org/psf/grants/"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    }
+  ],
+  "credits": [
+    {
+      "bucket_id": "provider-aws-techaction-resource-cloud-credit-basis-per-project-ceiling-unit-aws-promotional-credit-usd",
+      "label": "provider:AWS TechAction|resource:cloud-credit|basis:per-project-ceiling|unit:AWS Promotional Credit USD",
+      "scope": "us_sponsor",
+      "accounting_bucket": "credit",
+      "resource_kind": "cloud_credit",
+      "unit": {
+        "kind": "credit_currency",
+        "code": "USD",
+        "native_label": "AWS Promotional Credit USD"
+      },
+      "period": {
+        "kind": "one_time",
+        "display": "per project/application"
+      },
+      "amount": {
+        "minimum_sum": 0.0,
+        "maximum_sum": 5000.0
+      },
+      "records": [
+        {
+          "id": "aws-techaction-nonprofit-credit",
+          "measure_id": "aws-techaction-nonprofit-credit:credit-ceiling-usd"
+        }
+      ],
+      "source_urls": [
+        "https://aws.amazon.com/government-education/nonprofits/techaction/aws-techaction-faq/"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    },
+    {
+      "bucket_id": "provider-digitalocean-resource-cloud-credit-basis-annual-per-project-unit-digitalocean-credits-usd",
+      "label": "provider:DigitalOcean|resource:cloud-credit|basis:annual-per-project|unit:DigitalOcean credits USD",
+      "scope": "us_sponsor",
+      "accounting_bucket": "credit",
+      "resource_kind": "cloud_credit",
+      "unit": {
+        "kind": "credit_currency",
+        "code": "USD",
+        "native_label": "DigitalOcean credits USD"
+      },
+      "period": {
+        "kind": "annual",
+        "display": "one-year sponsorship"
+      },
+      "amount": {
+        "minimum_sum": 60.0,
+        "maximum_sum": 20000.0
+      },
+      "records": [
+        {
+          "id": "digitalocean-open-source-sponsorship",
+          "measure_id": "digitalocean-open-source-sponsorship:annual-credit-usd"
+        }
+      ],
+      "source_urls": [
+        "https://www.digitalocean.com/open-source/credits-for-projects"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    },
+    {
+      "bucket_id": "provider-microsoft-azure-resource-cloud-credit-basis-annual-per-organization-unit-azure-credits-usd",
+      "label": "provider:Microsoft Azure|resource:cloud-credit|basis:annual-per-organization|unit:Azure credits USD",
+      "scope": "us_sponsor",
+      "accounting_bucket": "credit",
+      "resource_kind": "cloud_credit",
+      "unit": {
+        "kind": "credit_currency",
+        "code": "USD",
+        "native_label": "Azure credits USD"
+      },
+      "period": {
+        "kind": "annual",
+        "display": "per eligible nonprofit"
+      },
+      "amount": {
+        "minimum_sum": 0.0,
+        "maximum_sum": 2000.0
+      },
+      "records": [
+        {
+          "id": "microsoft-nonprofits-azure-grant",
+          "measure_id": "microsoft-nonprofits-azure-grant:annual-credit-usd"
+        }
+      ],
+      "source_urls": [
+        "https://www.microsoft.com/en-us/nonprofits/azure"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    }
+  ],
+  "compute_facility": [
+    {
+      "bucket_id": "compute-access-compute-qpu-hour-qpu-hours-project-duration",
+      "label": "compute_access|compute|qpu_hour|QPU hours|project_duration",
+      "scope": "us_sponsor",
+      "accounting_bucket": "compute",
+      "resource_kind": "compute_access",
+      "unit": {
+        "kind": "qpu_hour",
+        "code": null,
+        "native_label": "QPU hours"
+      },
+      "period": {
+        "kind": "project_duration",
+        "display": "typical project"
+      },
+      "amount": {
+        "minimum_sum": 5.0,
+        "maximum_sum": 10.0
+      },
+      "records": [
+        {
+          "id": "ibm-quantum-credits",
+          "measure_id": "ibm-quantum-credits:typical-qpu-hours"
+        }
+      ],
+      "source_urls": [
+        "https://www.ibm.com/quantum/blog/credits-recipients"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    }
+  ],
+  "prizes_fellowships": [
+    {
+      "bucket_id": "prize-prize-currency-eur-one-time",
+      "label": "prize|prize|currency|EUR|one_time",
+      "scope": "all_only",
+      "accounting_bucket": "prize",
+      "resource_kind": "prize",
+      "unit": {
+        "kind": "currency",
+        "code": "EUR",
+        "native_label": "EUR"
+      },
+      "period": {
+        "kind": "one_time",
+        "display": "contingent prize"
+      },
+      "amount": {
+        "minimum_sum": 0.0,
+        "maximum_sum": 500.0
+      },
+      "records": [
+        {
+          "id": "openaire-ai-hackathon-2026",
+          "measure_id": "openaire-ai-hackathon-2026:grand-prize-eur"
+        }
+      ],
+      "source_urls": [
+        "https://innovation.openaire.eu/component/content/article/openaire-ai-hackathon.html?catid=8"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    },
+    {
+      "bucket_id": "prize-prize-currency-usd-cycle",
+      "label": "prize|prize|currency|USD|cycle",
+      "scope": "all_only",
+      "accounting_bucket": "prize",
+      "resource_kind": "prize",
+      "unit": {
+        "kind": "currency",
+        "code": "USD",
+        "native_label": "USD"
+      },
+      "period": {
+        "kind": "cycle",
+        "display": "third edition prize envelope"
+      },
+      "amount": {
+        "minimum_sum": 250000.0,
+        "maximum_sum": 250000.0
+      },
+      "records": [
+        {
+          "id": "unesco-al-fozan-prize-2026",
+          "measure_id": "unesco-al-fozan-prize-2026:five-prize-envelope-usd"
+        }
+      ],
+      "source_urls": [
+        "https://www.unesco.org/en/articles/third-edition-unesco-al-fozan-international-prize-promotion-young-scientists-science-technology"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    },
+    {
+      "bucket_id": "prize-prize-currency-usd-one-time",
+      "label": "prize|prize|currency|USD|one_time",
+      "scope": "all_only",
+      "accounting_bucket": "prize",
+      "resource_kind": "prize",
+      "unit": {
+        "kind": "currency",
+        "code": "USD",
+        "native_label": "USD"
+      },
+      "period": {
+        "kind": "one_time",
+        "display": "per laureate"
+      },
+      "amount": {
+        "minimum_sum": 0.0,
+        "maximum_sum": 50000.0
+      },
+      "records": [
+        {
+          "id": "unesco-al-fozan-prize-2026",
+          "measure_id": "unesco-al-fozan-prize-2026:per-laureate-prize-usd"
+        }
+      ],
+      "source_urls": [
+        "https://www.unesco.org/en/articles/third-edition-unesco-al-fozan-international-prize-promotion-young-scientists-science-technology"
+      ],
+      "aggregation_note": "Aggregated only within identical resource kind, unit, basis bucket, period, and current status."
+    }
+  ],
+  "other_in_kind": [],
+  "suppressed": [],
+  "warnings": [
+    "Program pools, per-award ranges, credits, compute/facility allocations, fellowships/prizes, and in-kind support are not interchangeable.",
+    "Per-award ceilings are not multiplied by guessed award counts.",
+    "Currencies are not converted or summed across currencies without a dated official conversion source."
+  ]
+}

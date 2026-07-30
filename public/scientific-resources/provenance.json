@@ -1,7 +1,7 @@
 {
-  "manifest_version": "1.0.0",
-  "snapshot_date": "2026-07-29",
-  "verified_at": "2026-07-30T02:11:42Z",
+  "manifest_version": "1.1.0",
+  "snapshot_date": "2026-07-30",
+  "verified_at": "2026-07-30T06:15:00Z",
   "profile": {
     "id": "primary",
     "role": "Primary",
@@ -10,24 +10,28 @@
   },
   "canonical_data": {
     "logical_name": "data/opportunities.json",
-    "sha256": "eda96fe0f7bdf3e462fe5ed4e2097b46ed0b9197a941960b61e32e80b71b312d",
-    "record_count": 54,
+    "sha256": "75e1e5c549574cd2593e9e55b9de89b9145a797a91c8ce7badd1f9f56aea88c6",
+    "record_count": 70,
     "status_counts": {
-      "open": 38,
-      "upcoming": 1,
-      "closed": 15
+      "open": 50,
+      "upcoming": 3,
+      "closed": 17
     }
   },
   "build_inputs": {
-    "data/schema.json": "121622f4ee96945191cc27251374d63354f4fe8531995acd2cd52c654f8752cf",
-    "src/generate.py": "e31703054901e21a065c1b00125a0b1b1c92f71f58f77f5433265d389bbac7f7",
+    "data/schema.json": "45d8e2f4eaeaaa265a4deb3568d590e7d06c0f6ef05e1e6678e969e8188b185c",
+    "src/generate.py": "3220643125528115296a306b7f970993bac7674c769c15b7cf311f9e01da1123",
     "src/site_profiles.json": "31ae8ab8aeb90d43e59619e27cfc491fa0c5839c217ea03ad855c03c81e59881",
-    "src/template.html": "bca18ba0d919b382e8083b1eef566a088af7cc620c0b20485acda162eee47285"
+    "src/template.html": "888772c2ffd4119e136716bbaba88b9b17e061b73f2893e9b93a5145d588db57"
   },
   "outputs": {
-    "index.html": "afe8521529f2afe9ec1dae6e6001d63494426f3fecc9934360d46fc064198c7d",
-    "public_opportunities.json": "eda96fe0f7bdf3e462fe5ed4e2097b46ed0b9197a941960b61e32e80b71b312d",
-    "snapshots/index.json": "63b55c52229df6627288dd659adc6c7882d2fd8f61e1a28dd8d29310043767dc",
+    "index.html": "33c520892d08e791a50a98d904cc457abb2a7ad7fd63c78b48a096e8f26a3d10",
+    "public_opportunities.json": "75e1e5c549574cd2593e9e55b9de89b9145a797a91c8ce7badd1f9f56aea88c6",
+    "funding_pulse.json": "bfbde997fba18831a5dd8327985d9efc801e10e180cc5622b6b3c260d9f14f1c",
+    "snapshots/index.json": "fc564be1329b42983b2b19fb744622cb6d5df6f29ca7ec93b8bcecc459fb6430",
+    "snapshots/2026-07-30-75e1e5c54957/public_opportunities.json": "75e1e5c549574cd2593e9e55b9de89b9145a797a91c8ce7badd1f9f56aea88c6",
+    "snapshots/2026-07-30-75e1e5c54957/change_manifest.json": "d388eaf6ed93f27e81ca6b72300048fc158d14903fdc11c4823486e8a31ff1a2",
+    "snapshots/2026-07-30-75e1e5c54957/funding_pulse.json": "bfbde997fba18831a5dd8327985d9efc801e10e180cc5622b6b3c260d9f14f1c",
     "snapshots/2026-07-29-eda96fe0f7bd/public_opportunities.json": "eda96fe0f7bdf3e462fe5ed4e2097b46ed0b9197a941960b61e32e80b71b312d",
     "snapshots/2026-07-29-eda96fe0f7bd/change_manifest.json": "c640c4940dd1f1cab391edc44c56515d8371feb53e5cb357ee451dda5a8c23e7",
     "snapshots/2026-07-29-b129c990e65b/public_opportunities.json": "b129c990e65b90848743a12253fb63e5470eaa0325e501b9815bf2093b9dabcf",

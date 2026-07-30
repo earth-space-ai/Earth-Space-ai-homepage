@@ -1,13 +1,66 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "title": "Scientific Resource Tracker snapshot index",
-  "current_snapshot_id": "2026-07-29-eda96fe0f7bd",
+  "current_snapshot_id": "2026-07-30-75e1e5c54957",
   "generated_from": {
     "source_repository": "https://github.com/earth-space-ai/scientific-resources",
-    "source_commit": "7437c403214262d059913f1290929fccb515039b",
-    "build_spec_version": "1.0.0"
+    "source_commit": "cdba70e30101914386650c166cd63e8dd4ad7c2f",
+    "build_spec_version": "1.1.0"
   },
   "snapshots": [
+    {
+      "snapshot_id": "2026-07-30-75e1e5c54957",
+      "page_date": "2026-07-30",
+      "page_timezone": "America/Los_Angeles",
+      "verified_at": "2026-07-30T06:15:00Z",
+      "canonical_data_sha256": "75e1e5c549574cd2593e9e55b9de89b9145a797a91c8ce7badd1f9f56aea88c6",
+      "record_count": 70,
+      "status_counts": {
+        "open": 50,
+        "upcoming": 3,
+        "closed": 17
+      },
+      "stable_id_sha256": "a37cbee217c9ccb3efdc8fa7a9e73ad12a41e3ccae763d4a079af3c2804ec626",
+      "data_url": "/scientific-resources/snapshots/2026-07-30-75e1e5c54957/public_opportunities.json",
+      "change_manifest_url": "/scientific-resources/snapshots/2026-07-30-75e1e5c54957/change_manifest.json",
+      "source": {
+        "kind": "source-git",
+        "commit": "cdba70e30101914386650c166cd63e8dd4ad7c2f",
+        "path": "data/opportunities.json"
+      },
+      "schema_version": "1.1.0",
+      "view_counts": {
+        "curated": {
+          "total": 54,
+          "open": 38,
+          "upcoming": 1,
+          "closed": 15
+        },
+        "all": {
+          "total": 70,
+          "open": 50,
+          "upcoming": 3,
+          "closed": 17
+        }
+      },
+      "relevance_counts": {
+        "direct": 39,
+        "adjacent": 15,
+        "unrelated": 16
+      },
+      "funding_pulse_summary": {
+        "state": "available",
+        "program_pool_buckets": 1,
+        "per_award_buckets": 3,
+        "credit_buckets": 3,
+        "compute_facility_buckets": 1,
+        "prize_fellowship_buckets": 3,
+        "quantified_current_records": 7,
+        "unquantified_current_records": 45
+      },
+      "funding_pulse_url": "/scientific-resources/snapshots/2026-07-30-75e1e5c54957/funding_pulse.json",
+      "funding_pulse_sha256": "bfbde997fba18831a5dd8327985d9efc801e10e180cc5622b6b3c260d9f14f1c"
+    },
     {
       "snapshot_id": "2026-07-29-eda96fe0f7bd",
       "page_date": "2026-07-29",
@@ -46,7 +99,7 @@
       "change_manifest_url": "/scientific-resources/snapshots/2026-07-29-b129c990e65b/change_manifest.json",
       "source": {
         "kind": "source-git",
-        "commit": "9c4da8bdbf03801ed7c9700bbabbb8b339d1e56c",
+        "commit": "30ec14aa0dfb0ae941820fca0d272f0a5aed0ab9",
         "path": "data/opportunities.json"
       }
     },
@@ -67,7 +120,7 @@
       "change_manifest_url": "/scientific-resources/snapshots/2026-07-29-cfe70c851e31/change_manifest.json",
       "source": {
         "kind": "source-git",
-        "commit": "273aff24dd1ec6474bac4edfa1eb4c30d517b6fa",
+        "commit": "9c4da8bdbf03801ed7c9700bbabbb8b339d1e56c",
         "path": "data/opportunities.json"
       }
     },
@@ -88,7 +141,7 @@
       "change_manifest_url": "/scientific-resources/snapshots/2026-07-29-9a003fb345f9/change_manifest.json",
       "source": {
         "kind": "source-git",
-        "commit": "28e802bf4df2a7653a790e0546e99a838c850dab",
+        "commit": "273aff24dd1ec6474bac4edfa1eb4c30d517b6fa",
         "path": "data/opportunities.json"
       }
     },
