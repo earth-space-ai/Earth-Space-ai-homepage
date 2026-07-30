@@ -1,13 +1,34 @@
 {
   "schema_version": "1.0.0",
   "title": "Scientific Resource Tracker snapshot index",
-  "current_snapshot_id": "2026-07-29-b129c990e65b",
+  "current_snapshot_id": "2026-07-29-eda96fe0f7bd",
   "generated_from": {
     "source_repository": "https://github.com/earth-space-ai/scientific-resources",
-    "source_commit": "9c4da8bdbf03801ed7c9700bbabbb8b339d1e56c",
+    "source_commit": "7437c403214262d059913f1290929fccb515039b",
     "build_spec_version": "1.0.0"
   },
   "snapshots": [
+    {
+      "snapshot_id": "2026-07-29-eda96fe0f7bd",
+      "page_date": "2026-07-29",
+      "page_timezone": "America/Los_Angeles",
+      "verified_at": "2026-07-30T02:11:42Z",
+      "canonical_data_sha256": "eda96fe0f7bdf3e462fe5ed4e2097b46ed0b9197a941960b61e32e80b71b312d",
+      "record_count": 54,
+      "status_counts": {
+        "open": 38,
+        "upcoming": 1,
+        "closed": 15
+      },
+      "stable_id_sha256": "df19eab6947ef29f247dfe62dafe59986dc17b2953a343f60dd63a5ceb51ef6a",
+      "data_url": "/scientific-resources/snapshots/2026-07-29-eda96fe0f7bd/public_opportunities.json",
+      "change_manifest_url": "/scientific-resources/snapshots/2026-07-29-eda96fe0f7bd/change_manifest.json",
+      "source": {
+        "kind": "source-git",
+        "commit": "7437c403214262d059913f1290929fccb515039b",
+        "path": "data/opportunities.json"
+      }
+    },
     {
       "snapshot_id": "2026-07-29-b129c990e65b",
       "page_date": "2026-07-29",

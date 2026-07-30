@@ -1,7 +1,7 @@
 {
   "manifest_version": "1.0.0",
   "snapshot_date": "2026-07-29",
-  "verified_at": "2026-07-30T01:16:56Z",
+  "verified_at": "2026-07-30T02:11:42Z",
   "profile": {
     "id": "primary",
     "role": "Primary",
@@ -10,10 +10,10 @@
   },
   "canonical_data": {
     "logical_name": "data/opportunities.json",
-    "sha256": "b129c990e65b90848743a12253fb63e5470eaa0325e501b9815bf2093b9dabcf",
-    "record_count": 48,
+    "sha256": "eda96fe0f7bdf3e462fe5ed4e2097b46ed0b9197a941960b61e32e80b71b312d",
+    "record_count": 54,
     "status_counts": {
-      "open": 32,
+      "open": 38,
       "upcoming": 1,
       "closed": 15
     }
@@ -22,12 +22,14 @@
     "data/schema.json": "121622f4ee96945191cc27251374d63354f4fe8531995acd2cd52c654f8752cf",
     "src/generate.py": "e31703054901e21a065c1b00125a0b1b1c92f71f58f77f5433265d389bbac7f7",
     "src/site_profiles.json": "31ae8ab8aeb90d43e59619e27cfc491fa0c5839c217ea03ad855c03c81e59881",
-    "src/template.html": "4522e58dc5e228a0d9f85c9dc1ceed8ed1767330d1fcfc289d3236b8be872250"
+    "src/template.html": "bca18ba0d919b382e8083b1eef566a088af7cc620c0b20485acda162eee47285"
   },
   "outputs": {
-    "index.html": "affdb188d95645042c8452bafaafa8494bdd80d9e181e109900c09509b4e0bc8",
-    "public_opportunities.json": "b129c990e65b90848743a12253fb63e5470eaa0325e501b9815bf2093b9dabcf",
-    "snapshots/index.json": "7deab676ded9faaf781f02d50166960fe5fb7471320cfa630c330e9318b7bb8f",
+    "index.html": "afe8521529f2afe9ec1dae6e6001d63494426f3fecc9934360d46fc064198c7d",
+    "public_opportunities.json": "eda96fe0f7bdf3e462fe5ed4e2097b46ed0b9197a941960b61e32e80b71b312d",
+    "snapshots/index.json": "63b55c52229df6627288dd659adc6c7882d2fd8f61e1a28dd8d29310043767dc",
+    "snapshots/2026-07-29-eda96fe0f7bd/public_opportunities.json": "eda96fe0f7bdf3e462fe5ed4e2097b46ed0b9197a941960b61e32e80b71b312d",
+    "snapshots/2026-07-29-eda96fe0f7bd/change_manifest.json": "c640c4940dd1f1cab391edc44c56515d8371feb53e5cb357ee451dda5a8c23e7",
     "snapshots/2026-07-29-b129c990e65b/public_opportunities.json": "b129c990e65b90848743a12253fb63e5470eaa0325e501b9815bf2093b9dabcf",
     "snapshots/2026-07-29-b129c990e65b/change_manifest.json": "1994645fc2ca3b06e8bb1754bdf6ee8be1e25d6079e839529efb858d5c4b4ff3",
     "snapshots/2026-07-29-cfe70c851e31/public_opportunities.json": "cfe70c851e31e17e2a9a0a78b9c093ad809928f9a4787da9fe2d2e2be015aa6b",
